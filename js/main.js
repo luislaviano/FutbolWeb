@@ -1,0 +1,52 @@
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+            },
+            480:{
+                items:1,
+                nav:true,
+            },
+            768:{
+                items:1,
+                nav:true,
+            },
+            1000:{
+                responsive: false,
+                items:4,
+                nav:false,
+                loop:false
+            }
+        }
+    });
+    $(".owlCarousel").lower_outer_box_content({
+        loop:true,
+        margin:0,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+            },
+            480:{
+                items:1,
+                nav:true,
+            },
+            768:{
+                items:1,
+                nav:true,
+            },
+            1000:{
+                responsive: false,
+                items:4,
+                nav:false,
+                loop:false
+            }
+        }
+    });
+});

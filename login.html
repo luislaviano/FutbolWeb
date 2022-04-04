@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action_page.php" method="post">
+      
+        <div class="container">
+          <label for="usuario"><b>Usuario</b></label>
+          <input type="text" placeholder="Ingrese su usuario" name="uname" required>
+      
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingrese su contraseña" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Recuerdame
+          </label>
+        </div>
+      
+        <div class="container">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Olvidaste tu <a href="#">contraseña?</a></span>
+        </div>
+      </form>
+      
+</body>
+</html>

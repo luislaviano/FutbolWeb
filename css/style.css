@@ -317,7 +317,6 @@ a{
   border-radius: 5px;
   font-size: 78%;
   display: grid;
-  max-width: 99%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr;
   grid-template-areas:
@@ -521,29 +520,34 @@ caption{
 }
 
 .premier_matches{
-  
+  display: inline-block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
+  min-width: 300px;
 }
 
 .uruguay_matches{
+  display: inline-block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-
+  min-width: 300px;
 }
 .argentina_matches{
+  display: inline-block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-
+  min-width: 300px;
 }
 
 .espana_matches{
+  display: inline-block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
+  min-width: 300px;
 
 }
 
@@ -663,16 +667,14 @@ caption{
 
 
  .owl-carousel {
-      max-width:280px;
+      margin-left: 3px;
+      margin-right: 3px;
+      max-width: 53%;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
-      font-size: 75%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:
-            "premier_matches";
+      font-size: 75%;     
+      
   }
 
   .container_ligas {
@@ -698,6 +700,8 @@ caption{
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
     font-size:12px;
+    display: block;
+
 
   }
   

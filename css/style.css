@@ -273,12 +273,11 @@ a{
 }
 
 .owl-item{
-  max-height: 400px;
+  max-height: 600px;
 
 }
 .upper_box_content {
-  padding-bottom: 10px;
-  max-height: 600px;
+  max-height: 700px;
   background-color: rgb(54, 50, 50);
   padding: 0 0 0 0;
   color: #fff;
@@ -291,12 +290,12 @@ a{
 }
 
 .owl-carousel {
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  font-size: 65%;
-  max-height: 300px;
+  font-size: 40%;
+  max-height: 700px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr;

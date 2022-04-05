@@ -227,6 +227,7 @@ a{
 }
 
 .container-big {
+  max-height: 1100px;
   margin: 1px;
   padding: 7px;
   background-color: rgb(31, 29, 29);
@@ -234,7 +235,7 @@ a{
   display: grid;
       grid-gap: 2px;
       grid-template-columns: 8% 82% 10%;
-      grid-template-rows: 5fr 6fr 1fr;
+      grid-template-rows: 10fr 9fr 1fr;
       grid-template-areas:
         "sidebar1 contenido1 sidebar2"
         "sidebar1 contenido2 sidebar2"
@@ -259,17 +260,25 @@ a{
 
 
 .lower_box_content {
+  max-height: 400px;
   background-color: #444;
   padding: 0 0 0 0;
   color: #fff;
   border-radius: 5px;
-  font-size: 80%;
+  font-size: 60%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 
 }
 
+.owl-item{
+  max-height: 400px;
+
+}
 .upper_box_content {
+  padding-bottom: 10px;
+  max-height: 600px;
   background-color: rgb(54, 50, 50);
   padding: 0 0 0 0;
   color: #fff;
@@ -282,10 +291,12 @@ a{
 }
 
 .owl-carousel {
+  padding-top: 20px;
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  font-size: 78%;
+  font-size: 65%;
+  max-height: 300px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr;
@@ -298,7 +309,7 @@ a{
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  font-size: 80%;
+  font-size: 40%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr;
@@ -314,9 +325,7 @@ a{
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
   font-size: small;
-  margin-right: 7px;
-  padding-right: 3px;
-  padding-left: 3px;
+  
 }
 
 .lefty1{
@@ -349,7 +358,7 @@ th {
 }
 
 caption{
-  font-size: 18px;
+  font-size: 14px;
 }
 .foot {
   background-color: #999;
@@ -374,6 +383,7 @@ caption{
 
 .game1, .game2, .game3, .game4, .game5, .game6, .game7{
   padding: 1px;
+  font-size: small;
   border-style: none;
   display: grid;
   justify-content: space-evenly;
@@ -386,20 +396,21 @@ caption{
 .matches_liga{
   display: flex;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 2px;
   background-color: #444;
 }
 
 .matches_liga td{
+
   padding-right: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   color:#fff;
   text-align: center;
   padding-top: 5px;
 }
 
 .box_middle_liga h3{
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   text-align: center;
   color:#fff;
 }
@@ -490,56 +501,60 @@ caption{
 }
 
 .premier_matches{
-  display: inline-block;
+  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  min-width: 300px;
+  max-width: 300px;
 }
 
 .uruguay_matches{
-  display: inline-block;
+  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  min-width: 300px;
+  max-width:300px;
 }
 .argentina_matches{
-  display: inline-block;
+  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  min-width: 300px;
+  max-width: 300px;
 }
 
 .espana_matches{
-  display: inline-block;
+  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  min-width: 300px;
+  max-width: 300px;
 
 }
 
 .uruguay_matches h3{
   text-align: center;
+  font-size:medium;
   padding-bottom: 7px;
   padding-top: 5px;
 }
 
 .premier_matches h3{
+  font-size:medium;
   text-align: center;
   padding-bottom: 7px;
   padding-top: 5px;
 }
 
 .argentina_matches h3{
+  font-size:medium;
   text-align: center;
   padding-bottom: 7px;
   padding-top: 5px;
 }
 
 .espana_matches h3{
+  font-size:medium;
   text-align: center;
   padding-bottom: 7px;
   padding-top: 5px;

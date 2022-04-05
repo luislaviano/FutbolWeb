@@ -13,7 +13,7 @@ $(document).ready(function(){
                 
             },
             1000:{
-                premier_matches: 4
+                premier_matches: 1
 
             }
         }

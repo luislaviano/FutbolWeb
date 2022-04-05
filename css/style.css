@@ -41,14 +41,15 @@ ul {
 }
 
 header{
-    display: flex;
+    margin-top: 10px;
+    display: inline-flex;
     justify-content: space-between;
     min-width: 700px;
 }
 
 header .logo{
     height: 5%;
-    margin-top: 27px;
+    margin-top: 5px;
     margin-left: 15px;
     position: absolute;
     border-style: solid ;
@@ -61,45 +62,12 @@ header .titulo{
     font-family: "myFirstFont";
     background-color: black;
     color: rgb(250, 116, 7);
-    height: 80px;
-    text-align:center;
-    padding-left: 130px;
-    padding-top: 30px;
     
 }
 
-.header-query {
-    background-color: black;
-    color: rgb(250, 116, 7);
-    margin-top: 30px;
-    margin-right: 40px;
-    padding-left: 30px;
-}
-
-.navigation-bar ul{
-    display: flex;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    justify-content:space-evenly;
-    flex-wrap: nowrap;
-    min-width: 660px;
-}
-
-.navigation-bar li{
-    margin-top: 25px;
-    background-color: black;
-    border: solid;
-    border-width: 2px;
-    border-color: rgb(250, 116, 7);
-    padding: 0px 5px 0 5px;
-    max-height: 25px;
-    border-radius: 8px;
-
-}
-
-.navigation-bar li:hover{
-  background-color: grey;
-  
+.tittle-container{
+  display:block;
+  justify-content: center;
 }
 
 #log{
@@ -297,7 +265,7 @@ a{
   border-radius: 5px;
   font-size: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
 }
 
@@ -306,8 +274,10 @@ a{
   padding: 0 0 0 0;
   color: #fff;
   border-radius: 5px;
-  display: inline-grid;
   margin-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  
   
 }
 
@@ -578,7 +548,7 @@ caption{
 
 
 /* Responsive layout - hace layout de 2 columnas en lugar de 4 */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
   header{
     display: flex;
@@ -593,7 +563,6 @@ caption{
 
   .banner{
     display: flex;
-    margin-left: 20px;
     justify-content: center;
       
   }
@@ -622,7 +591,7 @@ caption{
     background-color: #ccc;
     color: #444;
   }
-  .container {
+  .container-big {
     margin: 1px;
     padding: 6px;
     background-color: rgb(31, 29, 29);
@@ -644,10 +613,8 @@ caption{
     color: #fff;
     border-radius: 5px;
     font-size: 75%;
-    display: flex;
-    justify-content: left;
-    min-width: 120px;
-    max-width: 280px;
+    display: inline-block;
+       
     
   }
   
@@ -665,16 +632,30 @@ caption{
   
   }
 
+  .upper_outer_box_content {
+    max-width:280px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 73%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+          "premier";
+  
+  }
+
 
  .owl-carousel {
       margin-left: 3px;
       margin-right: 3px;
-      max-width: 53%;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
       font-size: 75%;     
-      
+      display: block;
+
   }
 
   .container_ligas {
@@ -700,11 +681,41 @@ caption{
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
     font-size:12px;
-    display: block;
-
-
+    display: inline-block;
   }
   
+  .premier_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  }
+  
+  .uruguay_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  }
+  .argentina_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  }
+  
+  .espana_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  
+  }
+
   .news iframe{
       width: 160px;
       height: 200px;

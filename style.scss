@@ -1,0 +1,738 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'CustomHeading';
+    src: url('../images/font/SFSportsNight.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('../images/font/SFSportsNight.ttf') format('woff2'), /* Super Modern Browsers */
+    url('../images/font/SFSportsNight.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('../images/font/SFSportsNight.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../images/font/SFSportsNight.ttf') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src:url(../images/font/SFSportsNight.ttf);
+}
+
+body{
+    background-color: black;
+
+}
+
+ul {
+  list-style-type:none
+}
+
+.outer-header{
+    border-style:solid;
+    
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+
+}
+
+header{
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 700px;
+}
+
+header .logo{
+    height: 5%;
+    margin-top: 5px;
+    margin-left: 15px;
+    position: absolute;
+    border-style: solid ;
+    border-color: black;
+    border-radius: 10px;
+
+}
+
+header .titulo{
+    font-family: "myFirstFont";
+    background-color: black;
+    color: rgb(250, 116, 7);
+    
+}
+
+.tittle-container{
+  display:block;
+  justify-content: center;
+}
+
+#log{
+
+    padding: 1px;
+    border-radius: 5px;
+    margin-left: 50px;
+    background-color: #999;
+}
+
+#reg{
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.box_sidebar1 {
+  grid-area: sidebar1;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+.box_sidebar2 {
+  grid-area: sidebar2;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+.box_sidebar1_ligas {
+  grid-area: sidebar1_ligas;
+  border-radius: 5px;
+}
+
+.box_sidebar2_ligas {
+  grid-area: sidebar2_ligas;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.news{
+  text-align: center;
+  padding-top: 20px;
+}
+.upper_box_content {
+  grid-area: contenido1;
+}
+
+.lower_box_content {
+  grid-area: contenido2;
+}
+
+.box_left_liga {
+  grid-area: left_liga;
+  display: flex;
+  justify-content: center;
+  gap: none;
+}
+
+.box_right_goleadores_liga {
+  grid-area: right_goleadores_liga;
+  background-color: #444;
+  border-style: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 5px;
+}
+
+.box_right_goleadores_liga h3{
+  text-align: center;
+}
+
+.box_right_asistencias_liga h3{
+  text-align: center;
+}
+
+.box_right_asistencias_liga {
+  grid-area: right_asistencias_liga;
+  background-color: #444;
+  border-style: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 5px;
+
+}
+
+.box_middle_liga {
+  grid-area: middle_liga;
+  display: flex;
+  justify-content: center;
+  gap: none;
+
+}
+
+.box_left_liga{
+  border-style: solid;
+  border-color: rgb(250, 116, 7);
+  min-width: 347px;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+
+.box_middle_liga{
+  background-color: #444;
+  display: inline;
+  padding-right: 2px;
+  border-style: solid;
+  border-color: rgb(250, 116, 7);
+  min-width: 270px;
+  border-radius: 5px;
+}
+
+
+.tabla_goleadores{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  margin: 1px;
+}
+
+.tabla_asistencias{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+ 
+}
+
+.h_asis{
+  margin-top: 25px;
+}
+
+.tabla_goleadores td{
+  padding-right: 10px;
+  padding-bottom: 1px;
+}
+
+.tabla_asistencias td{
+  padding-right: 10px;
+  padding-bottom: 1px;
+}
+
+.foot {
+  grid-area: pie;
+}
+
+.foot_ligas {
+  grid-area: pie2;
+  padding-top: 3px;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgb(153, 153, 153);
+  margin-top: 3px;
+}
+
+.container-big {
+  max-height: 1100px;
+  margin: 1px;
+  padding: 7px;
+  background-color: rgb(31, 29, 29);
+  color: #444;
+  display: grid;
+      grid-gap: 2px;
+      grid-template-columns: 8% 82% 10%;
+      grid-template-rows: 10fr 9fr 1fr;
+      grid-template-areas:
+        "sidebar1 contenido1 sidebar2"
+        "sidebar1 contenido2 sidebar2"
+        "pie pie pie";
+}
+
+.container_ligas {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 7px;
+  background-color: rgb(31, 29, 29);
+  color: #fff;
+  display: grid;
+      
+      grid-template-columns: 1fr 4fr 3fr 3fr 2fr;
+      grid-template-rows: 6fr 6fr 1fr;
+      grid-template-areas:
+        "sidebar1_ligas left_liga middle_liga right_goleadores_liga sidebar2_ligas"
+        "sidebar1_ligas left_liga middle_liga right_asistencias_liga sidebar2_ligas"
+        "pie2 pie2 pie2 pie2 pie2";
+}
+
+
+.lower_box_content {
+  max-height: 400px;
+  background-color: #444;
+  padding: 0 0 0 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+}
+
+.owl-item{
+  max-height: 600px;
+
+}
+.upper_box_content {
+  max-height: 700px;
+  background-color: rgb(54, 50, 50);
+  padding: 0 0 0 0;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.owl-carousel {
+  padding-top: 10px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 40%;
+  max-height: 700px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+        "premier_matches uruguay_matches argentina_matches espana_matches";
+
+}
+
+.lower_outer_box_content {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 40%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+        "uruguaya argentina premier espana"
+        "uruguaya argentina premier espana";
+
+}
+
+.uruguaya, .argentina, .premier, .espana{
+  height: 25%;
+  border-style: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 7px;
+  font-size: small;
+  
+}
+
+.lefty1{
+  grid-area: lefty1;
+}
+.lefty2{
+  grid-area: lefty2;
+}
+.righty1{
+  grid-area: righty1;
+}
+.righty2{
+  grid-area: righty2;
+}
+.centered{
+  grid-area: centered;
+}
+
+
+td{
+  border: 1px solid #999;  
+}
+tr{
+  white-space: nowrap;
+  overflow: hidden;
+}
+th {
+  border: 1px solid #999;
+
+}
+
+caption{
+  font-size: 14px;
+}
+.foot {
+  background-color: #999;
+  color: black;
+
+}
+
+.news iframe{
+  width: 170px;
+  height: 190px;
+}
+
+.box_sidebar1 {
+  background-color: #ccc;
+  color: #444;
+}
+.box_sidebar2 {
+  background-color: #ccc;
+  color: rgb(250, 116, 7);
+}
+
+
+.game1, .game2, .game3, .game4, .game5, .game6, .game7{
+  padding: 1px;
+  font-size: small;
+  border-style: none;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 10% 35% 10% 10% 35%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+        "lefty1 lefty2 centered righty1 righty2";
+}
+
+.matches_liga{
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+  background-color: #444;
+}
+
+.matches_liga td{
+
+  padding-right: 10px;
+  padding-bottom: 2px;
+  color:#fff;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.box_middle_liga h3{
+  padding-bottom: 2px;
+  text-align: center;
+  color:#fff;
+}
+.premier_matches ul > li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+.premier_matches ul > li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+.premier_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.premier_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.uruguay_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+
+.uruguay_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+.uruguay_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.uruguay_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.argentina_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+
+.argentina_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+.argentina_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.argentina_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.espana_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+.espana_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width:thin;
+}
+
+.espana_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.espana_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.match1, .match2, .match3, .match4, .match5, .match6, .match7{ 
+  border-style: none;
+}
+
+.premier_matches{
+  font-size: small;
+  border: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 7px;
+  max-width: 300px;
+}
+
+.uruguay_matches{
+  font-size: small;
+  border: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 7px;
+  max-width:300px;
+}
+.argentina_matches{
+  font-size: small;
+  border: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 7px;
+  max-width: 300px;
+}
+
+.espana_matches{
+  font-size: small;
+  border: solid;
+  border-color: rgb(250, 116, 7);
+  border-radius: 7px;
+  max-width: 300px;
+
+}
+
+.uruguay_matches h3{
+  text-align: center;
+  font-size:medium;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.premier_matches h3{
+  font-size:medium;
+  text-align: center;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.argentina_matches h3{
+  font-size:medium;
+  text-align: center;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.espana_matches h3{
+  font-size:medium;
+  text-align: center;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+
+
+/* Responsive layout - hace layout de 2 columnas en lugar de 4 */
+@media screen and (max-width: 600px) {
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+  }
+
+  header .titulo{
+    padding-left: 90px;
+      
+  }
+
+  .banner{
+    display: flex;
+    justify-content: center;
+      
+  }
+
+  .navigation-bar ul{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    min-width: 180px;
+  }
+
+  .outer-header{
+    border-style:solid;
+    display: inline-block;
+    text-align: center;
+    max-width: 220px;
+  }
+
+  #search{
+    max-width: 125px;
+  }
+  .box_sidebar1 {
+    max-width: 80px;
+    background-color: #ccc;
+    color: #444;
+  }
+  .container-big {
+    margin: 1px;
+    padding: 6px;
+    background-color: rgb(31, 29, 29);
+    color: #444;
+    display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 4fr 1fr 4fr 1fr;
+        grid-template-areas:
+          "sidebar1 contenido1"
+          "sidebar1 sidebar2"
+          "sidebar1 contenido2"
+          "pie pie";
+  }
+  
+  .lower_box_content {
+    background-color: #444;
+    padding: 0 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 75%;
+    display: inline-block;
+       
+    
+  }
+  
+  .lower_outer_box_content {
+    max-width:280px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 73%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+          "premier";
+  
+  }
+
+  .upper_outer_box_content {
+    max-width:280px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 73%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+          "premier";
+  
+  }
+
+
+ .owl-carousel {
+      margin-left: 3px;
+      margin-right: 3px;
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 75%;     
+      display: block;
+
+  }
+
+  .container_ligas {
+
+    padding: 7px;
+    background-color: rgb(31, 29, 29);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 6fr 3fr 3fr 1fr;
+    grid-template-areas:
+        "sidebar1_ligas left_liga middle_liga"
+        "sidebar1_ligas right_goleadores_liga  sidebar2_ligas"
+        "sidebar1_ligas right_asistencias_liga sidebar2_ligas"
+        "pie2 pie2 pie2";
+  }
+
+  .uruguaya, .argentina, .premier, .espana{
+    
+    height: 25%;
+    margin: 0;
+    border-style: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    font-size:12px;
+    display: inline-block;
+  }
+  
+  .premier_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  }
+  
+  .uruguay_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  }
+  .argentina_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  }
+  
+  .espana_matches{
+    display: block;
+    border: solid;
+    border-color: rgb(250, 116, 7);
+    border-radius: 7px;
+    min-width: 300px;
+  
+  }
+
+  .news iframe{
+      width: 160px;
+      height: 200px;
+  }
+}

@@ -1,0 +1,78 @@
+header {
+  margin-top: 10px;
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 700px;
+}
+
+header .tittle-container {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .tittle-container .titulo {
+  font-family: "myFirstFont";
+  background-color: black;
+  color: #fa7407;
+  text-align: center;
+}
+
+header .logo-container .logo {
+  height: 5%;
+  margin-top: 5px;
+  margin-left: 15px;
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#log {
+  padding: 1px;
+  border-radius: 5px;
+  margin-left: 50px;
+  background-color: #999;
+}
+
+#reg {
+  padding: 1px;
+  border-radius: 5px;
+  background-color: #999;
+}
+
+/* Responsive layout - hace layout de 2 columnas en lugar de 4 */
+@media screen and (max-width: 600px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 250px;
+  }
+  header .titulo {
+    padding-left: 90px;
+  }
+  header #search {
+    max-width: 125px;
+  }
+}
+
+.outer-header {
+  border-style: solid;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

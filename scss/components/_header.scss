@@ -1,0 +1,67 @@
+header{
+    margin-top: 10px;
+    display: block;
+    justify-content: space-between;
+    min-width: 700px;
+
+    .tittle-container{
+        display:block;
+        justify-content: center;
+    
+        .titulo{
+            font-family: "myFirstFont";
+            background-color: black;
+            color: rgb(250, 116, 7);
+            text-align: center;
+        
+        }
+    }
+
+
+    .logo-container{
+        
+        .logo{
+            height: 5%;
+            margin-top: 5px;
+            margin-left: 15px;
+            position: absolute;
+            border-style: solid ;
+            border-color: black;
+            border-radius: 10px;
+    
+        }
+    }
+
+}
+
+#log{
+
+    padding: 1px;
+    border-radius: 5px;
+    margin-left: 50px;
+    background-color: #999;
+}
+
+#reg{
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+/* Responsive layout - hace layout de 2 columnas en lugar de 4 */
+@media screen and (max-width: 600px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        min-width: 250px;
+
+        .titulo{
+            padding-left: 90px;
+              
+          }
+
+        #search{
+            max-width: 125px;
+        }
+    }
+}

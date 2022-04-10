@@ -25,64 +25,21 @@ body{
 
 }
 
+.outer-header{
+  border-style:solid;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  
+}
+
 ul {
   list-style-type:none
 }
 
-.outer-header{
-    border-style:solid;
-    
-}
 
-.banner{
-    display: flex;
-    justify-content: center;
-
-}
-
-header{
-    margin-top: 10px;
-    display: inline-flex;
-    justify-content: space-between;
-    min-width: 700px;
-}
-
-header .logo{
-    height: 5%;
-    margin-top: 5px;
-    margin-left: 15px;
-    position: absolute;
-    border-style: solid ;
-    border-color: black;
-    border-radius: 10px;
-
-}
-
-header .titulo{
-    font-family: "myFirstFont";
-    background-color: black;
-    color: rgb(250, 116, 7);
-    
-}
-
-.tittle-container{
-  display:block;
-  justify-content: center;
-}
-
-#log{
-
-    padding: 1px;
-    border-radius: 5px;
-    margin-left: 50px;
-    background-color: #999;
-}
-
-#reg{
-    padding: 1px;
-    border-radius: 5px;
-    background-color: #999;
-}
 
 a{
     text-decoration: none;
@@ -297,6 +254,7 @@ a{
   font-size: 40%;
   max-height: 700px;
   display: grid;
+  max-width: 99%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 1fr;
   grid-template-areas:
@@ -500,34 +458,29 @@ caption{
 }
 
 .premier_matches{
-  font-size: small;
+  
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  max-width: 300px;
 }
 
 .uruguay_matches{
-  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  max-width:300px;
+
 }
 .argentina_matches{
-  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  max-width: 300px;
+
 }
 
 .espana_matches{
-  font-size: small;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
-  max-width: 300px;
 
 }
 
@@ -564,42 +517,19 @@ caption{
 /* Responsive layout - hace layout de 2 columnas en lugar de 4 */
 @media screen and (max-width: 600px) {
 
-  header{
-    display: flex;
-    justify-content: space-between;
-    min-width: 250px;
-  }
-
-  header .titulo{
-    padding-left: 90px;
-      
-  }
-
-  .banner{
-    display: flex;
-    justify-content: center;
-      
-  }
-
-  .navigation-bar ul{
-    display: flex;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    min-width: 180px;
-  }
-
   .outer-header{
     border-style:solid;
     display: inline-block;
     text-align: center;
     max-width: 220px;
   }
-
-  #search{
-    max-width: 125px;
+  
+  .banner{
+    display: flex;
+    justify-content: center;
+      
   }
+
   .box_sidebar1 {
     max-width: 80px;
     background-color: #ccc;
@@ -662,14 +592,16 @@ caption{
 
 
  .owl-carousel {
-      margin-left: 3px;
-      margin-right: 3px;
+      max-width:280px;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
-      font-size: 75%;     
-      display: block;
-
+      font-size: 75%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+            "premier_matches";
   }
 
   .container_ligas {
@@ -695,7 +627,6 @@ caption{
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
     font-size:12px;
-    display: inline-block;
   }
   
   .premier_matches{

@@ -507,15 +507,16 @@ caption{
 
   .outer-header{
     border-style:solid;
-    display: inline-block;
+    display: flex;
     text-align: center;
-    max-width: 220px;
+    max-width: 310px;
+    margin-left: 20px
   }
 
   .banner{
-    display: flex;
-    justify-content: center;
-      
+    max-width: 320px;
+    display: inline-block;
+    margin-left: 80;  
   }
 
   .box_sidebar1 {
@@ -530,27 +531,31 @@ caption{
     color: #444;
     display: grid;
         grid-gap: 2px;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 5fr 5fr 5fr 5fr 2fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5fr 5fr 1fr 1fr 5fr 5fr 1fr;
         grid-template-areas:
-          "sidebar1 contenido1"
-          "sidebar1 contenido1"
-          "sidebar2 contenido2"
-          "sidebar2 contenido2"
+          "contenido1 contenido1"
+          "contenido1 contenido1"
+          "sidebar1 sidebar1"
+          "sidebar2 sidebar2"
+          "contenido2 contenido2"
+          "contenido2 contenido2"
           "pie pie";
   }
   
   .lower_box_content {
+    min-width: 340px;
     background-color: #444;
     padding: 0 0 0 0;
     color: #fff;
     border-radius: 5px;
     font-size: 75%;
-    display: inline-block;
+    display: flex;
   }
   
   .upper_box_content {
-    min-width: 400px;
+    margin-left: 2px;
+    min-width: 340px;
     background-color: #444;
     padding: 0 0 0 0;
     color: #fff;
@@ -560,7 +565,7 @@ caption{
   }
 
   .lower_outer_box_content {
-    max-width:300px;
+    min-width:340px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -574,7 +579,7 @@ caption{
   }
 
   .upper_outer_box_content {
-
+    max-width: 340px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -584,14 +589,16 @@ caption{
   }
 
  .owl-carousel {
-      max-width:300px;
-      margin-left: 18%;
+      padding-left: 2px;
+      padding-right: 2px;
+      min-width: 340px;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
       font-size: 75%;
+      
   }
-
+ 
   .container_ligas {
 
     padding: 7px;
@@ -609,12 +616,14 @@ caption{
 
   .uruguaya, .argentina, .premier, .espana{
     height: 25%;
-    min-width: 300px;
-    margin-top: 15px;
+    min-width: 350px;
+    margin-top: 5px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
     font-size:15px;
+    margin-left: 5px;
+    padding-right: 2px;
 
   }
   

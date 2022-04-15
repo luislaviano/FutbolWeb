@@ -25,7 +25,36 @@ body{
 
 }
 
+header{
+    margin-top: 10px;
+    display: block;
+    justify-content: space-between;
+    min-width: 700px;
+}
+header .tittle-container{
+        display:block;
+        justify-content: center;
+}    
 
+header .titulo{
+            font-family: "myFirstFont";
+            background-color: black;
+            color: rgb(250, 116, 7);
+            text-align: center;
+}
+
+
+.logo-container .logo{
+        height: 5%;
+        margin-top: 5px;
+        margin-left: 15px;
+        position: absolute;
+        border-style: solid ;
+        border-color: black;
+        border-radius: 10px;
+    
+
+}
 
 ul {
   list-style-type:none

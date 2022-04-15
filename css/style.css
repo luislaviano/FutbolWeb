@@ -534,12 +534,13 @@ caption{
     color: #444;
     display: grid;
         grid-gap: 2px;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: 4fr 1fr 4fr 1fr;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 5fr 5fr 5fr 5fr 2fr;
         grid-template-areas:
           "sidebar1 contenido1"
-          "sidebar1 sidebar2"
-          "sidebar1 contenido2"
+          "sidebar1 contenido1"
+          "sidebar2 contenido2"
+          "sidebar2 contenido2"
           "pie pie";
   }
   
@@ -550,12 +551,20 @@ caption{
     border-radius: 5px;
     font-size: 75%;
     display: inline-block;
-       
-    
   }
   
+  .upper_box_content {
+    min-width: 400px;
+    background-color: #444;
+    padding: 0 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 75%;
+    display: flex;
+  }
+
   .lower_outer_box_content {
-    max-width:280px;
+    max-width:300px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -569,7 +578,6 @@ caption{
   }
 
   .upper_outer_box_content {
-    max-width:280px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -585,15 +593,12 @@ caption{
 
  .owl-carousel {
       max-width:280px;
+      max-width:300px;
+      margin-left: 18%;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
       font-size: 75%;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:
-            "premier_matches";
   }
 
   .container_ligas {
@@ -614,11 +619,12 @@ caption{
   .uruguaya, .argentina, .premier, .espana{
     
     height: 25%;
-    margin: 0;
+    min-width: 300px;
+    margin-top: 15px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
-    font-size:12px;
+    font-size:15px;
   }
   
   .premier_matches{

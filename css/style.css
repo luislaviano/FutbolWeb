@@ -592,7 +592,6 @@ caption{
 
 
  .owl-carousel {
-      max-width:280px;
       max-width:300px;
       margin-left: 18%;
       background-color: #444;
@@ -626,7 +625,7 @@ caption{
     border-radius: 7px;
     font-size:15px;
   }
-  
+
   .premier_matches{
     display: block;
     border: solid;

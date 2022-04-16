@@ -213,7 +213,7 @@ a{
 }
 
 .container-big {
-  max-height: 1100px;
+  max-height: 1160px;
   margin: 1px;
   padding: 7px;
   background-color: rgb(31, 29, 29);
@@ -248,11 +248,12 @@ a{
 .lower_box_content {
   max-height: 400px;
   background-color: #444;
-  padding: 0 0 0 0;
+  padding: 7px 0 0 0;
   color: #fff;
   border-radius: 5px;
   font-size: 60%;
-  display: flex;
+  display: block;
+  text-align: center;
   justify-content: space-between;
   margin-bottom: 10px;
 
@@ -260,18 +261,18 @@ a{
 
 .owl-item{
   max-height: 600px;
+  text-align: center;
 
 }
 .upper_box_content {
+  display: block;
+  text-align: center;
   max-height: 700px;
   background-color: rgb(54, 50, 50);
   padding: 0 0 0 0;
   color: #fff;
   border-radius: 5px;
   margin-top: 7px;
-  
-  
-  
 }
 
 .owl-carousel {
@@ -300,6 +301,8 @@ a{
 
 .uruguaya, .argentina, .premier, .espana{
   height: 25%;
+  text-align: center;
+  min-width: 80px;
   border-style: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
@@ -330,6 +333,7 @@ td{
 tr{
   white-space: nowrap;
   overflow: hidden;
+
 }
 th {
   border: 1px solid #999;
@@ -338,7 +342,10 @@ th {
 
 caption{
   font-size: 14px;
+  text-align: center;
+  color:#fff;
 }
+
 .foot {
   background-color: #999;
   color: black;
@@ -584,6 +591,7 @@ caption{
 
   .container-big {
     margin: 1px;
+    max-height: 1200px;
     padding: 6px;
     background-color: rgb(31, 29, 29);
     color: #444;
@@ -604,14 +612,16 @@ caption{
   .lower_box_content {
     min-width: 340px;
     background-color: #444;
-    padding: 0 0 0 0;
+    padding: 7px 0 0 0;
     color: #fff;
     border-radius: 5px;
     font-size: 75%;
-    display: flex;
+    display: block;
   }
   
   .upper_box_content {
+    display: block;
+    text-align: center;
     margin-left: 2px;
     min-width: 340px;
     background-color: #444;
@@ -619,7 +629,6 @@ caption{
     color: #fff;
     border-radius: 5px;
     font-size: 75%;
-    display: flex;
   }
 
   .lower_outer_box_content {
@@ -654,9 +663,11 @@ caption{
       color: #fff;
       border-radius: 5px;
       font-size: 75%;
+      text-align: center;
       
   }
  
+
   .container_ligas {
 
     padding: 7px;
@@ -673,15 +684,16 @@ caption{
   }
 
   .uruguaya, .argentina, .premier, .espana{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
     height: 25%;
-    min-width: 350px;
+    min-width: 300px;
     margin-top: 5px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
-    font-size:15px;
-    margin-left: 5px;
-    padding-right: 2px;
+    font-size:18px;
 
   }
   

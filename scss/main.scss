@@ -186,7 +186,7 @@
   }
   
   .container-big {
-        max-height: 1160px;
+        max-height: 1200px;
         margin: 1px;
         padding: 7px;
         background-color: rgb(31, 29, 29);
@@ -219,7 +219,7 @@
   
   
   .lower_box_content {
-        max-height: 400px;
+        max-height: 500px;
         background-color: #444;
         padding: 7px 0 0 0;
         color: #fff;
@@ -235,9 +235,9 @@
                 color: #fff;
                 border-radius: 5px;
                 font-size: 35%;
-                max-height: 700px;
+                max-height: 480px;
                 .owl-item{
-                    max-height: 600px;
+                    max-height: 480px;
                     text-align: center;
                     }
                 }
@@ -506,7 +506,7 @@
         }
   
   }
-  
+
 /* Responsive layout - hace layout de 2 columnas en lugar de 4 */
 @media screen and (max-width: 600px) {
 
@@ -552,14 +552,14 @@
   
     .container-big {
       margin: 1px;
-      max-height: 1200px;
+      max-height: 1260px;
       padding: 6px;
       background-color: rgb(31, 29, 29);
       color: #444;
       display: grid;
           grid-gap: 2px;
           grid-template-columns: 50% 50%;
-          grid-template-rows: 5fr 5fr 1fr 1fr 5fr 5fr 1fr;
+          grid-template-rows: 5fr 2fr 1fr 1fr 5fr 3fr 1fr;
           grid-template-areas:
             "contenido1 contenido1"
             "contenido1 contenido1"
@@ -572,6 +572,7 @@
     
     .lower_box_content {
       min-width: 340px;
+      max-height: 380px;
       background-color: #444;
       padding: 7px 0 0 0;
       color: #fff;
@@ -581,6 +582,7 @@
     }
     
     .upper_box_content {
+      max-height: 380px;
       display: block;
       text-align: center;
       margin-left: 2px;
@@ -612,11 +614,11 @@
       color: #fff;
       border-radius: 5px;
       font-size: 73%;
-      
-    
+
     }
   
    .owl-carousel {
+        max-height: 380px;
         padding-left: 2px;
         padding-right: 2px;
         min-width: 340px;

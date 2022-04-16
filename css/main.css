@@ -258,7 +258,7 @@ a {
 }
 
 .container-big {
-  max-height: 1160px;
+  max-height: 1200px;
   margin: 1px;
   padding: 7px;
   background-color: #1f1d1d;
@@ -289,7 +289,7 @@ a {
 }
 
 .lower_box_content {
-  max-height: 400px;
+  max-height: 500px;
   background-color: #444;
   padding: 7px 0 0 0;
   color: #fff;
@@ -309,11 +309,11 @@ a {
   color: #fff;
   border-radius: 5px;
   font-size: 35%;
-  max-height: 700px;
+  max-height: 480px;
 }
 
 .lower_box_content .owl-carousel .owl-item {
-  max-height: 600px;
+  max-height: 480px;
   text-align: center;
 }
 
@@ -635,7 +635,7 @@ caption {
   }
   .container-big {
     margin: 1px;
-    max-height: 1200px;
+    max-height: 1260px;
     padding: 6px;
     background-color: #1f1d1d;
     color: #444;
@@ -644,12 +644,13 @@ caption {
     grid-gap: 2px;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 5fr 5fr 1fr 1fr 5fr 5fr 1fr;
-        grid-template-rows: 5fr 5fr 1fr 1fr 5fr 5fr 1fr;
+    -ms-grid-rows: 5fr 2fr 1fr 1fr 5fr 3fr 1fr;
+        grid-template-rows: 5fr 2fr 1fr 1fr 5fr 3fr 1fr;
         grid-template-areas: "contenido1 contenido1" "contenido1 contenido1" "sidebar1 sidebar1" "sidebar2 sidebar2" "contenido2 contenido2" "contenido2 contenido2" "pie pie";
   }
   .lower_box_content {
     min-width: 340px;
+    max-height: 380px;
     background-color: #444;
     padding: 7px 0 0 0;
     color: #fff;
@@ -658,6 +659,7 @@ caption {
     display: block;
   }
   .upper_box_content {
+    max-height: 380px;
     display: block;
     text-align: center;
     margin-left: 2px;
@@ -690,6 +692,7 @@ caption {
     font-size: 73%;
   }
   .owl-carousel {
+    max-height: 380px;
     padding-left: 2px;
     padding-right: 2px;
     min-width: 340px;

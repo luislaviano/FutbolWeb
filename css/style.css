@@ -20,6 +20,43 @@
     font-family: "myFirstFont";
     src:url(../images/font/SFSportsNight.ttf);
 }
+
+header{
+  margin-top: 10px;
+  display: block;
+  justify-content: space-between;
+
+}
+
+.tittle-container{
+      display:flex;
+      justify-content: center;
+}
+
+.titulo{
+    font-family: "myFirstFont";
+    background-color: black;
+    color: rgb(250, 116, 7);
+    text-align: center;
+      
+}
+
+.banner{
+  display:flex;
+  justify-content: center;
+}
+
+.logo-container .logo{
+      height: 5%;
+      margin-top: 5px;
+      margin-left: 15px;
+      position: absolute;
+      border-style: solid ;
+      border-color: black;
+      border-radius: 10px;
+  
+}
+
 body{
     background-color: black;
 
@@ -183,8 +220,8 @@ a{
   color: #444;
   display: grid;
       grid-gap: 2px;
-      grid-template-columns: 8% 82% 10%;
-      grid-template-rows: 10fr 9fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+      grid-template-rows: 8fr 8fr 2fr;
       grid-template-areas:
         "sidebar1 contenido1 sidebar2"
         "sidebar1 contenido2 sidebar2"
@@ -232,8 +269,7 @@ a{
   color: #fff;
   border-radius: 5px;
   margin-top: 7px;
-  display: flex;
-  justify-content: space-between;
+  
   
   
 }
@@ -243,14 +279,8 @@ a{
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  font-size: 40%;
+  font-size: 35%;
   max-height: 700px;
-  display: grid;
-  max-width: 99%;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-        "premier_matches uruguay_matches argentina_matches espana_matches";
 
 }
 
@@ -450,19 +480,21 @@ caption{
 }
 
 .premier_matches{
-  
+  display: block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
 }
 
 .uruguay_matches{
+  display: block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
 
 }
 .argentina_matches{
+  display: block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
@@ -470,6 +502,7 @@ caption{
 }
 
 .espana_matches{
+  display: block;
   border: solid;
   border-color: rgb(250, 116, 7);
   border-radius: 7px;
@@ -509,24 +542,46 @@ caption{
 /* Responsive layout - hace layout de 2 columnas en lugar de 4 */
 @media screen and (max-width: 600px) {
 
-  .outer-header{
+  header {
+    display: flex;
+
+  }
+
+  h1{
+    padding-left: 60px;
+    
+  }
+  
+  .tittle-container{
+    display: block;
+    max-width: 300px;
+    
+  }
+
+  img{
+    max-width: 290px;
+  }
+
+ .outer-header{
     border-style:solid;
-    display: inline-block;
+    display: block;
     text-align: center;
-    max-width: 220px;
+    max-width: 180px;
   }
 
   .banner{
-    display: flex;
-    justify-content: center;
-      
+    display: block;
+    padding-left: 42px;
+   
+    
   }
 
+
   .box_sidebar1 {
-    max-width: 80px;
     background-color: #ccc;
     color: #444;
   }
+
   .container-big {
     margin: 1px;
     padding: 6px;
@@ -534,27 +589,31 @@ caption{
     color: #444;
     display: grid;
         grid-gap: 2px;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 5fr 5fr 5fr 5fr 2fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5fr 5fr 1fr 1fr 5fr 5fr 1fr;
         grid-template-areas:
-          "sidebar1 contenido1"
-          "sidebar1 contenido1"
-          "sidebar2 contenido2"
-          "sidebar2 contenido2"
+          "contenido1 contenido1"
+          "contenido1 contenido1"
+          "sidebar1 sidebar1"
+          "sidebar2 sidebar2"
+          "contenido2 contenido2"
+          "contenido2 contenido2"
           "pie pie";
   }
   
   .lower_box_content {
+    min-width: 340px;
     background-color: #444;
     padding: 0 0 0 0;
     color: #fff;
     border-radius: 5px;
     font-size: 75%;
-    display: inline-block;
+    display: flex;
   }
   
   .upper_box_content {
-    min-width: 400px;
+    margin-left: 2px;
+    min-width: 340px;
     background-color: #444;
     padding: 0 0 0 0;
     color: #fff;
@@ -564,7 +623,7 @@ caption{
   }
 
   .lower_outer_box_content {
-    max-width:300px;
+    min-width:340px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -578,28 +637,26 @@ caption{
   }
 
   .upper_outer_box_content {
+    max-width: 340px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     font-size: 73%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-          "premier";
+    
   
   }
 
-
  .owl-carousel {
-      max-width:300px;
-      margin-left: 18%;
+      padding-left: 2px;
+      padding-right: 2px;
+      min-width: 340px;
       background-color: #444;
       color: #fff;
       border-radius: 5px;
       font-size: 75%;
+      
   }
-
+ 
   .container_ligas {
 
     padding: 7px;
@@ -616,16 +673,18 @@ caption{
   }
 
   .uruguaya, .argentina, .premier, .espana{
-    
     height: 25%;
-    min-width: 300px;
-    margin-top: 15px;
+    min-width: 350px;
+    margin-top: 5px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     border-radius: 7px;
     font-size:15px;
-  }
+    margin-left: 5px;
+    padding-right: 2px;
 
+  }
+  
   .premier_matches{
     display: block;
     border: solid;
@@ -662,4 +721,5 @@ caption{
       width: 160px;
       height: 200px;
   }
+  
 }

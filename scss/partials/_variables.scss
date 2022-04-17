@@ -5,4 +5,11 @@ h3{
     color: $color-secundario;
 }
 
+@mixin flex($display, $justify, $b_rad){
+    display: $display;
+    justify-content: $justify;
+    border-radius: $b_rad;
+}
+
+
 

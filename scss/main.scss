@@ -4,7 +4,8 @@
 @import "./partials/header";
 @import '../css/owl.carousel.min.css';
 @import '../css/owl.theme.default.min.css';
-@import "./partials/funciones";
+@import './partials/funciones';
+@import './partials/extend';
 
 *{
     margin: 0;
@@ -155,9 +156,8 @@
   
   
   .tabla_goleadores{
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
+        @extend %flex;
+
         margin: 1px;
         td{
             padding-right: 10px;
@@ -166,9 +166,7 @@
   }
   
   .tabla_asistencias{
-        display: flex;
-        justify-content: center;
-        padding-top: 5px;
+        @extend %flex;
 
         h3{
             margin-top: 25px;
@@ -534,7 +532,28 @@
         font-size: 80%;
         overflow: hidden;
         padding-right: 50px;
-        justify-content: space-between;
+
+        .fecha1, .fecha2, .fecha3{
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            height: 25%;
+            min-width: 300px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-style: solid;
+            border-color: rgb(250, 116, 7);
+            border-radius: 7px;
+            font-size:22px;
+        
+            tr{
+                margin-bottom: 50px;
+            }
+
+            td{
+                font-size: medium;
+            }
+        }
 
         .owl-item{
 
@@ -542,10 +561,7 @@
             text-align: center;
             display: block;
             justify-content: space-between;
-            
-            table tr{
-                margin-bottom: 50px;
-            }
+
         }
     }
 
@@ -555,37 +571,17 @@
         color:#fff;
     }
 
-    td{
-        font-size: medium;
-    }
-
-    .fecha1, .fecha2, .fecha3{
-        display: inline-block;
-        justify-content: center;
-        text-align: center;
-        height: 25%;
-        min-width: 300px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        border-style: solid;
-        border-color: rgb(250, 116, 7);
-        border-radius: 7px;
-        font-size:22px;
-    
-      }
 }
 
 .box-middle1-top-qatar{
+    @include flex(inline, center, 5px);
     grid-area: middle1-top-qatar;
-    justify-content: center;
     gap: none;
     background-color: #444;
-    display: inline;
     padding-right: 2px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     min-width: 270px;
-    border-radius: 5px;
 
     h3{
         padding-bottom: 2px;
@@ -600,16 +596,14 @@
 }
 
 .box-middle2-top-qatar{
+    @include flex(inline, center, 5px);
     grid-area: middle2-top-qatar;
-    justify-content: center;
     gap: none;
     background-color: #444;
-    display: inline;
     padding-right: 2px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     min-width: 270px;
-    border-radius: 5px;
 
     h3{
         padding-bottom: 2px;
@@ -623,16 +617,14 @@
 }
 
 .box-right-top-qatar{
+    @include flex(inline, center, 5px);
     grid-area: right-top-qatar;
-    justify-content: center;
     gap: none;
     background-color: #444;
-    display: inline;
     padding-right: 2px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     min-width: 270px;
-    border-radius: 5px;
 
     h3{
         padding-bottom: 2px;
@@ -646,16 +638,14 @@
 }
 
 .box-left-bottom-qatar{
+    @include flex(inline, center, 5px);
     grid-area: left-bottom-qatar;
-    justify-content: center;
     gap: none;
     background-color: #444;
-    display: inline;
     padding-right: 2px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     min-width: 270px;
-    border-radius: 5px;
 
     h3{
         padding-bottom: 2px;
@@ -669,16 +659,14 @@
 }
 
 .box-middle1-bottom-qatar{
+    @include flex(inline, center, 5px);
     grid-area: middle1-bottom-qatar;
-    justify-content: center;
     gap: none;
     background-color: #444;
-    display: inline;
     padding-right: 2px;
     border-style: solid;
     border-color: rgb(250, 116, 7);
     min-width: 270px;
-    border-radius: 5px;
 
     h3{
         padding-bottom: 2px;

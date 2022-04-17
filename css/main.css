@@ -1,6 +1,10 @@
 @import url(c:\Users\luis_\OneDrive\Escritorio\Carpeta Coderhouse\FutbolWeb\css\owl.carousel.min.css);
 @import url(c:\Users\luis_\OneDrive\Escritorio\Carpeta Coderhouse\FutbolWeb\css\owl.theme.default.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+h3 {
+  color: #fff;
+}
+
 header {
   margin-top: 10px;
   display: block;
@@ -33,6 +37,10 @@ header .logo-container .logo {
   border-style: solid;
   border-color: black;
   border-radius: 10px;
+}
+
+h3 {
+  color: #b3b3b3;
 }
 
 * {
@@ -83,6 +91,7 @@ a {
   grid-area: sidebar1;
   border-radius: 5px;
   word-wrap: break-word;
+  background-color: #444;
 }
 
 .box_sidebar2 {
@@ -92,6 +101,7 @@ a {
   grid-area: sidebar2;
   border-radius: 5px;
   word-wrap: break-word;
+  background-color: #444;
 }
 
 .box_sidebar1_ligas {
@@ -381,16 +391,6 @@ caption {
   height: 190px;
 }
 
-.box_sidebar1 {
-  background-color: #ccc;
-  color: #444;
-}
-
-.box_sidebar2 {
-  background-color: #ccc;
-  color: #fa7407;
-}
-
 .game1, .game2, .game3, .game4, .game5, .game6, .game7 {
   padding: 1px;
   font-size: small;
@@ -628,10 +628,6 @@ caption {
   .banner {
     display: block;
     padding-left: 42px;
-  }
-  .box_sidebar1 {
-    background-color: #ccc;
-    color: #444;
   }
   .container-big {
     margin: 1px;

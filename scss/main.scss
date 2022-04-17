@@ -1,7 +1,10 @@
 
+
+@import "./partials/variables";
 @import "./partials/header";
 @import '../css/owl.carousel.min.css';
 @import '../css/owl.theme.default.min.css';
+@import "./partials/funciones";
 
 *{
     margin: 0;
@@ -38,14 +41,11 @@
   
   }
   
-  
-  
   ul {
     list-style-type:none
   }
   
-  
-  
+
   a{
     text-decoration: none;
     color:#fff;
@@ -55,12 +55,15 @@
         grid-area: sidebar1;
         border-radius: 5px;
         word-wrap: break-word;
+        background-color: #444;
   }
   
   .box_sidebar2 {
         grid-area: sidebar2;
         border-radius: 5px;
         word-wrap: break-word;
+        background-color: #444;
+
   }
   
   .box_sidebar1_ligas {
@@ -311,15 +314,7 @@
     height: 190px;
   }
   
-  .box_sidebar1 {
-    background-color: #ccc;
-    color: #444;
-  }
-  .box_sidebar2 {
-    background-color: #ccc;
-    color: rgb(250, 116, 7);
-  }
-  
+
   
   .game1, .game2, .game3, .game4, .game5, .game6, .game7{
     padding: 1px;
@@ -544,11 +539,6 @@
       
     }
   
-  
-    .box_sidebar1 {
-      background-color: #ccc;
-      color: #444;
-    }
   
     .container-big {
       margin: 1px;

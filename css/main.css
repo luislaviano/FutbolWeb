@@ -166,10 +166,6 @@ a {
   text-align: center;
 }
 
-.box_right_asistencias_liga h3 {
-  text-align: center;
-}
-
 .box_right_asistencias_liga {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
@@ -180,18 +176,8 @@ a {
   border-radius: 5px;
 }
 
-.box_middle_liga {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: middle_liga;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: none;
+.box_right_asistencias_liga h3 {
+  text-align: center;
 }
 
 .box_left_liga {
@@ -204,6 +190,14 @@ a {
 }
 
 .box_middle_liga {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: middle_liga;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: none;
   background-color: #444;
   display: inline;
   padding-right: 2px;
@@ -211,6 +205,12 @@ a {
   border-color: #fa7407;
   min-width: 270px;
   border-radius: 5px;
+}
+
+.box_middle_liga h3 {
+  padding-bottom: 2px;
+  text-align: center;
+  color: #fff;
 }
 
 .tabla_goleadores {
@@ -239,13 +239,13 @@ a {
   padding-top: 5px;
 }
 
+.tabla_asistencias h3 {
+  margin-top: 25px;
+}
+
 .tabla_asistencias td {
   padding-right: 10px;
   padding-bottom: 1px;
-}
-
-.h_asis {
-  margin-top: 25px;
 }
 
 .foot {
@@ -456,12 +456,6 @@ caption {
   padding-top: 5px;
 }
 
-.box_middle_liga h3 {
-  padding-bottom: 2px;
-  text-align: center;
-  color: #fff;
-}
-
 .match1, .match2, .match3, .match4, .match5, .match6, .match7 {
   border-style: none;
 }
@@ -609,25 +603,28 @@ caption {
     display: -ms-flexbox;
     display: flex;
   }
-  h1 {
-    padding-left: 60px;
-  }
-  .tittle-container {
+  header .tittle-container {
     display: block;
     max-width: 300px;
   }
-  img {
-    max-width: 290px;
+  header .tittle-container h1 {
+    padding-left: 60px;
   }
   .outer-header {
     border-style: solid;
     display: block;
     text-align: center;
-    max-width: 180px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
-  .banner {
+  .outer-header .banner {
     display: block;
-    padding-left: 42px;
+    padding-left: 3px;
+    max-width: 460px;
+  }
+  .outer-header .banner img {
+    max-width: 90%;
   }
   .container-big {
     margin: 1px;
@@ -640,9 +637,9 @@ caption {
     grid-gap: 2px;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 5fr 2fr 1fr 1fr 5fr 3fr 1fr;
-        grid-template-rows: 5fr 2fr 1fr 1fr 5fr 3fr 1fr;
-        grid-template-areas: "contenido1 contenido1" "contenido1 contenido1" "sidebar1 sidebar1" "sidebar2 sidebar2" "contenido2 contenido2" "contenido2 contenido2" "pie pie";
+    -ms-grid-rows: 1fr 5fr 2fr 1fr 5fr 3fr 1fr;
+        grid-template-rows: 1fr 5fr 2fr 1fr 5fr 3fr 1fr;
+        grid-template-areas: "sidebar1 sidebar1" "contenido1 contenido1" "contenido1 contenido1" "sidebar2 sidebar2" "contenido2 contenido2" "contenido2 contenido2" "pie pie";
   }
   .lower_box_content {
     min-width: 340px;
@@ -704,11 +701,94 @@ caption {
     color: #fff;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 4fr 2fr;
-        grid-template-columns: 1fr 4fr 2fr;
-    -ms-grid-rows: 6fr 3fr 3fr 1fr;
-        grid-template-rows: 6fr 3fr 3fr 1fr;
-        grid-template-areas: "sidebar1_ligas left_liga middle_liga" "sidebar1_ligas right_goleadores_liga  sidebar2_ligas" "sidebar1_ligas right_asistencias_liga sidebar2_ligas" "pie2 pie2 pie2";
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 5% 40% 27% 15% 10% 3%;
+        grid-template-rows: 5% 40% 27% 15% 10% 3%;
+        grid-template-areas: "sidebar1_ligas sidebar1_ligas" "left_liga left_liga" "middle_liga middle_liga" "right_goleadores_liga right_asistencias_liga" "sidebar2_ligas sidebar2_ligas" "pie2 pie2";
+  }
+  .container_ligas .tabla_goleadores {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: right_goleadores_liga;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 230px;
+    padding-top: 5px;
+  }
+  .container_ligas .tabla_goleadores h3 {
+    margin-top: 10px;
+  }
+  .container_ligas .tabla_goleadores td {
+    font-size: 0.5em;
+    padding-bottom: 1px;
+  }
+  .container_ligas .tabla_asistencias {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: right_asistencias_liga;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 230px;
+    padding-top: 5px;
+  }
+  .container_ligas .tabla_asistencias .h3 {
+    margin-top: 10px;
+  }
+  .container_ligas .tabla_asistencias td {
+    font-size: 0.5em;
+    padding-bottom: 1px;
+  }
+  .container_ligas .box_middle_liga {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: middle_liga;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: none;
+    background-color: #444;
+    display: inline;
+    padding-right: 2px;
+    border-style: solid;
+    border-color: #fa7407;
+    min-width: 100px;
+    border-radius: 5px;
+  }
+  .container_ligas .box_middle_liga h3 {
+    padding-bottom: 2px;
+    text-align: center;
+    color: #fff;
+  }
+  .container_ligas .box_sidebar1_ligas {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: sidebar1_ligas;
+    border-radius: 5px;
+  }
+  .container_ligas .box_sidebar2_ligas {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: sidebar2_ligas;
+    border-radius: 5px;
+  }
+  .container_ligas .box_sidebar2_ligas .news {
+    padding-top: 0px;
+  }
+  .container_ligas .box_sidebar2_ligas .news iframe {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100px;
+    width: 140px;
   }
   .uruguaya, .argentina, .premier, .espana {
     display: inline-block;
@@ -751,10 +831,6 @@ caption {
     border-color: #fa7407;
     border-radius: 7px;
     min-width: 300px;
-  }
-  .news iframe {
-    width: 160px;
-    height: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */

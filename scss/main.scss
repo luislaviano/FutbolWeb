@@ -510,7 +510,19 @@
     padding-left: 5px;
 }
 
+.bandera{
+    size:1px;
+}
+
+
+tr{
+    margin-bottom: 50px;
+}
+
+
+
 .box-left-top-qatar{
+    @include flex(inline, center, 5px);
     grid-area: left-top-qatar;
     justify-content: center;
     gap: none;
@@ -521,56 +533,68 @@
     border-color: rgb(250, 116, 7);
     min-width: 100px;
     border-radius: 5px;
-    
-    .owl-fecha-qatar {
-        padding-top: 10px;
-        display: block;
-        justify-content:space-evenly;
-        background-color: #444;
-        color: #fff;
-        border-radius: 5px;
-        font-size: 80%;
-        overflow: hidden;
-        padding-right: 50px;
 
-        .fecha1, .fecha2, .fecha3{
-            display: inline-block;
-            justify-content: center;
-            text-align: center;
-            height: 25%;
-            min-width: 300px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border-style: solid;
-            border-color: rgb(250, 116, 7);
-            border-radius: 7px;
-            font-size:22px;
+    .top-top{
+        display: flex;
+        justify-content: center;
         
-            tr{
-                margin-bottom: 50px;
+        table{
+            display: block;        
+
+            caption{
+            
+                min-width: 50px;
             }
 
-            td{
-                font-size: medium;
-            }
         }
+    }
 
-        .owl-item{
-
-            max-height: 50px;
-            text-align: center;
-            display: block;
+    .carousel-item{
+        
+        .container{
+            display: inline-block;
             justify-content: space-between;
+            
+            p{
+                text-align: center;
+                padding-top: 0;
+            }
 
+            table{
+                display:flex;
+                justify-content: center;
+
+                .celda-izq, .celda-der{
+                    width: 2rem;
+                    height: 1.33rem;
+                }
+            
+                .celda-res-izq, .celda-res-der{
+                    text-align: center;
+                    min-width: 1.5rem;
+                    height: 1.33rem;
+                }
+        
+                td{
+                    font-size: medium;
+                }
+        
+                img{
+                    width:2rem;
+                    height:1.33rem;
+                }
+
+            }
+        }
+    
+        
+
+        h3{
+            padding-bottom: 2px;
+            text-align: center;
+            color:#fff;
         }
     }
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
 }
 
 .box-middle1-top-qatar{
@@ -1013,7 +1037,4 @@
     }
     
   }
-  
-  
-  
   

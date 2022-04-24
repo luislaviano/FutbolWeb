@@ -521,9 +521,24 @@ tr{
 
 
 
-.box-left-top-qatar{
-    @include flex(inline, center, 5px);
+.grupoA{
     grid-area: left-top-qatar;
+}
+
+.grupoB{
+    grid-area: middle1-top-qatar;
+}
+
+.grupoC{
+    grid-area: middle2-top-qatar;
+}
+
+.grupoD{
+    grid-area: right-top-qatar;
+}
+
+.grupoA, .grupoB, .grupoC, .grupoD, .grupoE, .grupoF, .grupoG, .grupoH{
+    @include flex(inline, center, 5px);
     justify-content: center;
     gap: none;
     background-color: #444;
@@ -549,10 +564,16 @@ tr{
         }
     }
 
-    .carousel-item{
+    .carousel-indicators{
+        position:sticky;
+        padding-top: 5px;
         
+    }
+    .carousel-item{
+
+               
         .container{
-            display: inline-block;
+            display: block;
             justify-content: space-between;
             
             table{
@@ -785,7 +806,7 @@ tr{
     color: #fff;
     display: grid;
   
-        grid-template-columns: 8% 21% 21% 21% 21% 8%;
+        grid-template-columns: 4% 21% 21% 21% 21% 12%;
         grid-template-rows: 6fr 6fr 1fr;
         grid-template-areas:
             "sidebar1_qatar left-top-qatar middle1-top-qatar middle2-top-qatar right-top-qatar sidebar2_qatar"

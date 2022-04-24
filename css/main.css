@@ -615,15 +615,36 @@ tr {
   margin-bottom: 50px;
 }
 
-.box-left-top-qatar {
+.grupoA {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: left-top-qatar;
+}
+
+.grupoB {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: middle1-top-qatar;
+}
+
+.grupoC {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: middle2-top-qatar;
+}
+
+.grupoD {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: right-top-qatar;
+}
+
+.grupoA, .grupoB, .grupoC, .grupoD, .grupoE, .grupoF, .grupoG, .grupoH {
   display: inline;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: left-top-qatar;
   justify-content: center;
   gap: none;
   background-color: #444;
@@ -635,7 +656,7 @@ tr {
   border-radius: 5px;
 }
 
-.box-left-top-qatar .top-top {
+.grupoA .top-top, .grupoB .top-top, .grupoC .top-top, .grupoD .top-top, .grupoE .top-top, .grupoF .top-top, .grupoG .top-top, .grupoH .top-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,22 +665,28 @@ tr {
           justify-content: center;
 }
 
-.box-left-top-qatar .top-top table {
+.grupoA .top-top table, .grupoB .top-top table, .grupoC .top-top table, .grupoD .top-top table, .grupoE .top-top table, .grupoF .top-top table, .grupoG .top-top table, .grupoH .top-top table {
   display: block;
 }
 
-.box-left-top-qatar .top-top table caption {
+.grupoA .top-top table caption, .grupoB .top-top table caption, .grupoC .top-top table caption, .grupoD .top-top table caption, .grupoE .top-top table caption, .grupoF .top-top table caption, .grupoG .top-top table caption, .grupoH .top-top table caption {
   min-width: 50px;
 }
 
-.box-left-top-qatar .carousel-item .container {
-  display: inline-block;
+.grupoA .carousel-indicators, .grupoB .carousel-indicators, .grupoC .carousel-indicators, .grupoD .carousel-indicators, .grupoE .carousel-indicators, .grupoF .carousel-indicators, .grupoG .carousel-indicators, .grupoH .carousel-indicators {
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 5px;
+}
+
+.grupoA .carousel-item .container, .grupoB .carousel-item .container, .grupoC .carousel-item .container, .grupoD .carousel-item .container, .grupoE .carousel-item .container, .grupoF .carousel-item .container, .grupoG .carousel-item .container, .grupoH .carousel-item .container {
+  display: block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.box-left-top-qatar .carousel-item .container table {
+.grupoA .carousel-item .container table, .grupoB .carousel-item .container table, .grupoC .carousel-item .container table, .grupoD .carousel-item .container table, .grupoE .carousel-item .container table, .grupoF .carousel-item .container table, .grupoG .carousel-item .container table, .grupoH .carousel-item .container table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,12 +695,12 @@ tr {
           justify-content: center;
 }
 
-.box-left-top-qatar .carousel-item .container table .Fecha1 {
+.grupoA .carousel-item .container table .Fecha1, .grupoB .carousel-item .container table .Fecha1, .grupoC .carousel-item .container table .Fecha1, .grupoD .carousel-item .container table .Fecha1, .grupoE .carousel-item .container table .Fecha1, .grupoF .carousel-item .container table .Fecha1, .grupoG .carousel-item .container table .Fecha1, .grupoH .carousel-item .container table .Fecha1 {
   display: block;
   margin-bottom: 0;
 }
 
-.box-left-top-qatar .carousel-item .container table .Fecha1 td {
+.grupoA .carousel-item .container table .Fecha1 td, .grupoB .carousel-item .container table .Fecha1 td, .grupoC .carousel-item .container table .Fecha1 td, .grupoD .carousel-item .container table .Fecha1 td, .grupoE .carousel-item .container table .Fecha1 td, .grupoF .carousel-item .container table .Fecha1 td, .grupoG .carousel-item .container table .Fecha1 td, .grupoH .carousel-item .container table .Fecha1 td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,12 +710,12 @@ tr {
   border-style: none;
 }
 
-.box-left-top-qatar .carousel-item .container table .dia-Fecha1 {
+.grupoA .carousel-item .container table .dia-Fecha1, .grupoB .carousel-item .container table .dia-Fecha1, .grupoC .carousel-item .container table .dia-Fecha1, .grupoD .carousel-item .container table .dia-Fecha1, .grupoE .carousel-item .container table .dia-Fecha1, .grupoF .carousel-item .container table .dia-Fecha1, .grupoG .carousel-item .container table .dia-Fecha1, .grupoH .carousel-item .container table .dia-Fecha1 {
   display: block;
   margin-bottom: 0;
 }
 
-.box-left-top-qatar .carousel-item .container table .dia-Fecha1 td {
+.grupoA .carousel-item .container table .dia-Fecha1 td, .grupoB .carousel-item .container table .dia-Fecha1 td, .grupoC .carousel-item .container table .dia-Fecha1 td, .grupoD .carousel-item .container table .dia-Fecha1 td, .grupoE .carousel-item .container table .dia-Fecha1 td, .grupoF .carousel-item .container table .dia-Fecha1 td, .grupoG .carousel-item .container table .dia-Fecha1 td, .grupoH .carousel-item .container table .dia-Fecha1 td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,29 +725,29 @@ tr {
   border-style: none;
 }
 
-.box-left-top-qatar .carousel-item .container table .celda-izq, .box-left-top-qatar .carousel-item .container table .celda-der {
+.grupoA .carousel-item .container table .celda-izq, .grupoA .carousel-item .container table .celda-der, .grupoB .carousel-item .container table .celda-izq, .grupoB .carousel-item .container table .celda-der, .grupoC .carousel-item .container table .celda-izq, .grupoC .carousel-item .container table .celda-der, .grupoD .carousel-item .container table .celda-izq, .grupoD .carousel-item .container table .celda-der, .grupoE .carousel-item .container table .celda-izq, .grupoE .carousel-item .container table .celda-der, .grupoF .carousel-item .container table .celda-izq, .grupoF .carousel-item .container table .celda-der, .grupoG .carousel-item .container table .celda-izq, .grupoG .carousel-item .container table .celda-der, .grupoH .carousel-item .container table .celda-izq, .grupoH .carousel-item .container table .celda-der {
   width: 2rem;
   height: 1.33rem;
 }
 
-.box-left-top-qatar .carousel-item .container table .celda-res-izq, .box-left-top-qatar .carousel-item .container table .celda-res-der {
+.grupoA .carousel-item .container table .celda-res-izq, .grupoA .carousel-item .container table .celda-res-der, .grupoB .carousel-item .container table .celda-res-izq, .grupoB .carousel-item .container table .celda-res-der, .grupoC .carousel-item .container table .celda-res-izq, .grupoC .carousel-item .container table .celda-res-der, .grupoD .carousel-item .container table .celda-res-izq, .grupoD .carousel-item .container table .celda-res-der, .grupoE .carousel-item .container table .celda-res-izq, .grupoE .carousel-item .container table .celda-res-der, .grupoF .carousel-item .container table .celda-res-izq, .grupoF .carousel-item .container table .celda-res-der, .grupoG .carousel-item .container table .celda-res-izq, .grupoG .carousel-item .container table .celda-res-der, .grupoH .carousel-item .container table .celda-res-izq, .grupoH .carousel-item .container table .celda-res-der {
   text-align: center;
   min-width: 1.5rem;
   height: 1.33rem;
 }
 
-.box-left-top-qatar .carousel-item .container table tr td {
+.grupoA .carousel-item .container table tr td, .grupoB .carousel-item .container table tr td, .grupoC .carousel-item .container table tr td, .grupoD .carousel-item .container table tr td, .grupoE .carousel-item .container table tr td, .grupoF .carousel-item .container table tr td, .grupoG .carousel-item .container table tr td, .grupoH .carousel-item .container table tr td {
   font-size: medium;
   min-width: 2rem;
   text-align: center;
 }
 
-.box-left-top-qatar .carousel-item .container table tr img {
+.grupoA .carousel-item .container table tr img, .grupoB .carousel-item .container table tr img, .grupoC .carousel-item .container table tr img, .grupoD .carousel-item .container table tr img, .grupoE .carousel-item .container table tr img, .grupoF .carousel-item .container table tr img, .grupoG .carousel-item .container table tr img, .grupoH .carousel-item .container table tr img {
   width: 2rem;
   height: 1.33rem;
 }
 
-.box-left-top-qatar .carousel-item h3 {
+.grupoA .carousel-item h3, .grupoB .carousel-item h3, .grupoC .carousel-item h3, .grupoD .carousel-item h3, .grupoE .carousel-item h3, .grupoF .carousel-item h3, .grupoG .carousel-item h3, .grupoH .carousel-item h3 {
   padding-bottom: 2px;
   text-align: center;
   color: #fff;
@@ -935,8 +962,8 @@ tr {
   color: #fff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 8% 21% 21% 21% 21% 8%;
-      grid-template-columns: 8% 21% 21% 21% 21% 8%;
+  -ms-grid-columns: 4% 21% 21% 21% 21% 12%;
+      grid-template-columns: 4% 21% 21% 21% 21% 12%;
   -ms-grid-rows: 6fr 6fr 1fr;
       grid-template-rows: 6fr 6fr 1fr;
       grid-template-areas: "sidebar1_qatar left-top-qatar middle1-top-qatar middle2-top-qatar right-top-qatar sidebar2_qatar" "sidebar1_qatar left-bottom-qatar middle1-bottom-qatar middle2-bottom-qatar right-bottom-qatar sidebar2_qatar" "pie-qatar pie-qatar pie-qatar pie-qatar pie-qatar pie-qatar";

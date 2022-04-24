@@ -555,14 +555,29 @@ tr{
             display: inline-block;
             justify-content: space-between;
             
-            p{
-                text-align: center;
-                padding-top: 0;
-            }
-
             table{
                 display:flex;
                 justify-content: center;
+
+                .Fecha1{
+                    display:block;
+                    margin-bottom: 0;
+                    td{
+                        display:flex;
+                        justify-content: center;
+                        border-style: none;
+                    }
+                }
+
+                .dia-Fecha1{
+                    display:block;
+                    margin-bottom: 0;
+                    td{
+                        display: flex;
+                        justify-content: center;
+                        border-style: none;
+                    }
+                }
 
                 .celda-izq, .celda-der{
                     width: 2rem;
@@ -575,15 +590,19 @@ tr{
                     height: 1.33rem;
                 }
         
-                td{
-                    font-size: medium;
-                }
+                tr{
+                
+                    td{
+                        font-size: medium;
+                        min-width: 2rem;
+                        text-align: center;
+                    }
         
-                img{
-                    width:2rem;
-                    height:1.33rem;
+                    img{
+                        width:2rem;
+                        height:1.33rem;
+                    }
                 }
-
             }
         }
     

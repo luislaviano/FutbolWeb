@@ -659,11 +659,6 @@ tr {
           justify-content: space-between;
 }
 
-.box-left-top-qatar .carousel-item .container p {
-  text-align: center;
-  padding-top: 0;
-}
-
 .box-left-top-qatar .carousel-item .container table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,6 +666,36 @@ tr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.box-left-top-qatar .carousel-item .container table .Fecha1 {
+  display: block;
+  margin-bottom: 0;
+}
+
+.box-left-top-qatar .carousel-item .container table .Fecha1 td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-style: none;
+}
+
+.box-left-top-qatar .carousel-item .container table .dia-Fecha1 {
+  display: block;
+  margin-bottom: 0;
+}
+
+.box-left-top-qatar .carousel-item .container table .dia-Fecha1 td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-style: none;
 }
 
 .box-left-top-qatar .carousel-item .container table .celda-izq, .box-left-top-qatar .carousel-item .container table .celda-der {
@@ -684,11 +709,13 @@ tr {
   height: 1.33rem;
 }
 
-.box-left-top-qatar .carousel-item .container table td {
+.box-left-top-qatar .carousel-item .container table tr td {
   font-size: medium;
+  min-width: 2rem;
+  text-align: center;
 }
 
-.box-left-top-qatar .carousel-item .container table img {
+.box-left-top-qatar .carousel-item .container table tr img {
   width: 2rem;
   height: 1.33rem;
 }

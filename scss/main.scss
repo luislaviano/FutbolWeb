@@ -255,11 +255,11 @@
         display: block;
         text-align: center;
         max-height: 700px;
-        background-color: rgb(54, 50, 50);
+        background-color: #444;
         padding: 0 0 0 0;
         color: #fff;
         border-radius: 5px;
-        margin-top: 7px;
+        margin-top: 0px;
   }
   
 
@@ -498,17 +498,7 @@
   
   }
 
-.box_sidebar1_qatar {
-    grid-area: sidebar1_qatar;
-    border-radius: 5px;
-    padding-left: 5px;
-}
 
-.box_sidebar2_qatar {
-    grid-area: sidebar2_qatar;
-    border-radius: 5px;
-    padding-left: 5px;
-}
 
 .bandera{
     size:1px;
@@ -520,22 +510,6 @@ tr{
 }
 
 
-
-.grupoA{
-    grid-area: left-top-qatar;
-}
-
-.grupoB{
-    grid-area: middle1-top-qatar;
-}
-
-.grupoC{
-    grid-area: middle2-top-qatar;
-}
-
-.grupoD{
-    grid-area: right-top-qatar;
-}
 
 .grupoA, .grupoB, .grupoC, .grupoD, .grupoE, .grupoF, .grupoG, .grupoH{
     @include flex(inline, center, 5px);
@@ -554,7 +528,8 @@ tr{
         justify-content: center;
         
         table{
-            display: block;        
+            display: block;
+            font-size: 1rem;      
 
             caption{
             
@@ -637,157 +612,8 @@ tr{
     }
 }
 
-.box-middle1-top-qatar{
-    @include flex(inline, center, 5px);
-    grid-area: middle1-top-qatar;
-    gap: none;
-    background-color: #444;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
 
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
 
-    td{
-        font-size: small;
-    }
-
-}
-
-.box-middle2-top-qatar{
-    @include flex(inline, center, 5px);
-    grid-area: middle2-top-qatar;
-    gap: none;
-    background-color: #444;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
-    td{
-        font-size: small;
-    }
-}
-
-.box-right-top-qatar{
-    @include flex(inline, center, 5px);
-    grid-area: right-top-qatar;
-    gap: none;
-    background-color: #444;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
-    td{
-        font-size: small;
-    }
-}
-
-.box-left-bottom-qatar{
-    @include flex(inline, center, 5px);
-    grid-area: left-bottom-qatar;
-    gap: none;
-    background-color: #444;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
-    td{
-        font-size: small;
-    }
-}
-
-.box-middle1-bottom-qatar{
-    @include flex(inline, center, 5px);
-    grid-area: middle1-bottom-qatar;
-    gap: none;
-    background-color: #444;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
-    td{
-        font-size: small;
-    }
-}
-
-.box-middle2-bottom-qatar{
-    grid-area: middle2-bottom-qatar;
-    justify-content: center;
-    gap: none;
-    background-color: #444;
-    display: inline;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
-    border-radius: 5px;
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
-    td{
-        font-size: small;
-    }
-}
-
-.box-right-bottom-qatar{
-    grid-area: right-bottom-qatar;
-    justify-content: center;
-    gap: none;
-    background-color: #444;
-    display: inline;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 270px;
-    border-radius: 5px;
-
-    h3{
-        padding-bottom: 2px;
-        text-align: center;
-        color:#fff;
-    }
-
-    td{
-        font-size: small;
-    }
-}
 
 .foot-qatar {
     grid-area: pie-qatar;
@@ -798,21 +624,7 @@ tr{
     margin-top: 3px;
 }
 
-.container_qatar {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 7px;
-    background-color: rgb(31, 29, 29);
-    color: #fff;
-    display: grid;
-  
-        grid-template-columns: 4% 21% 21% 21% 21% 12%;
-        grid-template-rows: 6fr 6fr 1fr;
-        grid-template-areas:
-            "sidebar1_qatar left-top-qatar middle1-top-qatar middle2-top-qatar right-top-qatar sidebar2_qatar"
-            "sidebar1_qatar left-bottom-qatar middle1-bottom-qatar middle2-bottom-qatar right-bottom-qatar sidebar2_qatar"
-            "pie-qatar pie-qatar pie-qatar pie-qatar pie-qatar pie-qatar";
-}
+
 
 
 
@@ -858,20 +670,17 @@ tr{
   
     .container-big {
       margin: 1px;
-      max-height: 1260px;
-      padding: 6px;
-      background-color: rgb(31, 29, 29);
+      padding: 5px;
+      background-color: #444;
       color: #444;
       display: grid;
           grid-gap: 2px;
           grid-template-columns: 50% 50%;
-          grid-template-rows: 1fr 5fr 2fr 1fr 5fr 3fr 1fr;
+          grid-template-rows: 9% 44% 9% 43% 5%;
           grid-template-areas:
             "sidebar1 sidebar1"
             "contenido1 contenido1"
-            "contenido1 contenido1"
             "sidebar2 sidebar2"
-            "contenido2 contenido2"
             "contenido2 contenido2"
             "pie pie";
     }
@@ -888,7 +697,7 @@ tr{
     }
     
     .upper_box_content {
-      max-height: 380px;
+      max-height: 390px;
       display: block;
       text-align: center;
       margin-left: 2px;
@@ -924,16 +733,32 @@ tr{
     }
   
    .owl-carousel {
-        max-height: 380px;
+        max-height: 410px;
         padding-left: 2px;
         padding-right: 2px;
         min-width: 340px;
         background-color: #444;
         color: #fff;
         border-radius: 5px;
-        font-size: 75%;
+        font-size: large;
         text-align: center;
-        
+
+        .top-top{
+            margin: 0;
+            padding: 0;
+
+            table{
+                margin: 0;
+                padding: 0;
+                font-size: 1.2rem;
+
+                tr{
+                    td{
+                        font-size:large;
+                    }
+                }
+            }
+        }
     }
    
   

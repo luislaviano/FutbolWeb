@@ -105,7 +105,34 @@ a {
   margin-right: 0;
 }
 
-.box_sidebar1 .flags {
+.box_sidebar1 .inside_sidebar_row1 .flags1 {
+  display: block;
+  margin-left: 33%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  height: 30px;
+  width: 48px;
+}
+
+.box_sidebar1 .inside_sidebar_row1 .flags2 {
+  display: block;
+  margin-left: 33%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  height: 30px;
+  width: 48px;
+}
+
+.box_sidebar1 .inside_sidebar_row2 .flags1 {
+  display: block;
+  margin-left: 33%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  height: 30px;
+  width: 48px;
+}
+
+.box_sidebar1 .inside_sidebar_row2 .flags2 {
   display: block;
   margin-left: 33%;
   margin-top: 11%;
@@ -125,7 +152,34 @@ a {
   margin-right: 0;
 }
 
-.box_sidebar2 .flags {
+.box_sidebar2 .inside_sidebar_row1 .flags1 {
+  display: block;
+  margin-left: 33%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  height: 30px;
+  width: 48px;
+}
+
+.box_sidebar2 .inside_sidebar_row1 .flags2 {
+  display: block;
+  margin-left: 33%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  height: 30px;
+  width: 48px;
+}
+
+.box_sidebar2 .inside_sidebar_row2 .flags1 {
+  display: block;
+  margin-left: 33%;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  height: 30px;
+  width: 48px;
+}
+
+.box_sidebar2 .inside_sidebar_row2 .flags2 {
   display: block;
   margin-left: 33%;
   margin-top: 11%;
@@ -785,12 +839,110 @@ tr {
     grid-gap: 2px;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 6% 43% 6% 43% 2%;
-        grid-template-rows: 6% 43% 6% 43% 2%;
+    -ms-grid-rows: 4% 43% 6% 43% 4%;
+        grid-template-rows: 4% 43% 6% 43% 4%;
         grid-template-areas: "sidebar1 sidebar1" "contenido1 contenido1" "sidebar2 sidebar2" "contenido2 contenido2" "pie pie";
   }
+  .container-big .box_sidebar1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: sidebar1;
+    border-radius: 5px;
+    background-color: #444;
+    padding-top: 2px;
+    margin-right: 0;
+  }
+  .container-big .box_sidebar1 .inside_sidebar_row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1px;
+    margin-left: 4%;
+    margin-bottom: 1%;
+  }
+  .container-big .box_sidebar1 .inside_sidebar_row1 .flags1 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar1 .inside_sidebar_row1 .flags2 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar1 .inside_sidebar_row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0%;
+    margin-left: 4%;
+  }
+  .container-big .box_sidebar1 .inside_sidebar_row2 .flags1 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar1 .inside_sidebar_row2 .flags2 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: sidebar2;
+    border-radius: 5px;
+    background-color: #444;
+    padding-top: 2px;
+    margin-right: 0;
+  }
+  .container-big .box_sidebar2 .inside_sidebar_row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1px;
+    margin-left: 4%;
+    margin-bottom: 1%;
+  }
+  .container-big .box_sidebar2 .inside_sidebar_row1 .flags1 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar2 .inside_sidebar_row1 .flags2 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar2 .inside_sidebar_row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0%;
+    margin-left: 4%;
+  }
+  .container-big .box_sidebar2 .inside_sidebar_row2 .flags1 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  .container-big .box_sidebar2 .inside_sidebar_row2 .flags2 {
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 1.5rem;
+  }
   .lower_box_content {
-    min-width: 340px;
+    min-width: 320px;
     max-height: 380px;
     background-color: #444;
     padding: 7px 0 0 0;
@@ -837,7 +989,7 @@ tr {
     font-size: 73%;
   }
   .owl-carousel {
-    max-height: 360px;
+    max-height: 300px;
     padding-left: 2px;
     padding-right: 2px;
     min-width: 340px;
@@ -851,7 +1003,7 @@ tr {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
-    max-height: 20px;
+    max-height: 10px;
   }
   .owl-carousel .owl-dots {
     padding-top: 5px;
@@ -1005,33 +1157,6 @@ tr {
     border-radius: 7px;
     min-width: 300px;
   }
-  .box_sidebar1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: sidebar1;
-    border-radius: 5px;
-    background-color: #444;
-    padding-top: 2px;
-    margin-right: 0;
-  }
-  .box_sidebar1 .inside_sidebar_row1 {
-    margin-top: 1px;
-    margin-left: 4%;
-    margin-bottom: 1%;
-  }
-  .box_sidebar1 .inside_sidebar_row1 .flags1 {
-    height: 1.4rem;
-    width: 2.3rem;
-  }
-  .box_sidebar1 .inside_sidebar_row2 {
-    margin-top: 0%;
-    margin-left: 4%;
-  }
-  .box_sidebar1 .inside_sidebar_row2 .flags2 {
-    height: 1.4rem;
-    width: 2.3rem;
-  }
   .lower_box_content {
     margin-top: 10px;
     padding-top: 10px;
@@ -1048,6 +1173,9 @@ tr {
     margin-right: 0;
   }
   .box_sidebar2 .inside_sidebar_row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 1px;
     margin-left: 3.5%;
     margin-bottom: 2%;
@@ -1056,9 +1184,20 @@ tr {
     height: 1.6rem;
     width: 2.4rem;
   }
+  .box_sidebar2 .inside_sidebar_row1 .flags2 {
+    height: 1.6rem;
+    width: 2.4rem;
+  }
   .box_sidebar2 .inside_sidebar_row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 2px;
     margin-left: 3.5%;
+  }
+  .box_sidebar2 .inside_sidebar_row2 .flags1 {
+    height: 1.6rem;
+    width: 2.4rem;
   }
   .box_sidebar2 .inside_sidebar_row2 .flags2 {
     height: 1.6rem;

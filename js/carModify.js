@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // Activate Carousel
     $('.carousel').attr(
-        "data-interval", "20000");
+        "data-interval", "25000");
 
 })

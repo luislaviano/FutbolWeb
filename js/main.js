@@ -1,5 +1,6 @@
 $(document).ready(function() {
- 
+
+
     $(".owl-carousel").owlCarousel({
   
       responsiveClass:true,

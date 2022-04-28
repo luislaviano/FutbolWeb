@@ -55,15 +55,35 @@
   .box_sidebar1 {
         grid-area: sidebar1;
         border-radius: 5px;
-        word-wrap: break-word;
         background-color: #444;
+        padding-top: 5px;
+        margin-right: 0;
+
+            .flags{
+                display: block;
+                margin-left: 33%;
+                margin-top: 11%;
+                margin-bottom: 11%;
+                height: 30px;
+                width: 48px;
+            }
   }
   
   .box_sidebar2 {
         grid-area: sidebar2;
         border-radius: 5px;
-        word-wrap: break-word;
         background-color: #444;
+        padding-top: 5px;
+        margin-right: 0;
+
+            .flags{
+                display: block;
+                margin-left: 33%;
+                margin-top: 11%;
+                margin-bottom: 11%;
+                height: 30px;
+                width: 48px;
+            }
 
   }
   
@@ -529,7 +549,7 @@ tr{
         
         table{
             display: block;
-            font-size: 1rem;      
+            font-size: small;    
 
             caption{
             
@@ -546,7 +566,6 @@ tr{
     }
     .carousel-item{
 
-               
         .container{
             display: block;
             justify-content: space-between;
@@ -589,7 +608,7 @@ tr{
                 tr{
                 
                     td{
-                        font-size: medium;
+                        font-size:medium;
                         min-width: 2rem;
                         text-align: center;
                     }
@@ -605,7 +624,7 @@ tr{
         
 
         h3{
-            padding-bottom: 2px;
+            padding-bottom: 1px;
             text-align: center;
             color:#fff;
         }
@@ -631,16 +650,20 @@ tr{
 /* Responsive layout - hace layout de 2 columnas en lugar de 4 */
 @media screen and (max-width: 600px) {
 
+
     header {
       display: flex;
-
+      
       .tittle-container{
         display: block;
         max-width: 300px;
+        margin-bottom: 0;
+        padding-bottom: 0;
 
         h1{
             padding-left: 60px;
-            
+            font-size: 1.9rem;
+            padding-bottom: 0;
         }
         
       }
@@ -670,13 +693,13 @@ tr{
   
     .container-big {
       margin: 1px;
-      padding: 5px;
+      padding: 4px;
       background-color: #444;
       color: #444;
       display: grid;
           grid-gap: 2px;
           grid-template-columns: 50% 50%;
-          grid-template-rows: 9% 44% 9% 43% 5%;
+          grid-template-rows: 6% 43% 6% 43% 2%;
           grid-template-areas:
             "sidebar1 sidebar1"
             "contenido1 contenido1"
@@ -707,6 +730,11 @@ tr{
       color: #fff;
       border-radius: 5px;
       font-size: 75%;
+
+        h3{
+            padding-bottom: 1px;
+            margin-bottom: 1px;
+        }
     }
   
     .lower_outer_box_content {
@@ -733,7 +761,7 @@ tr{
     }
   
    .owl-carousel {
-        max-height: 410px;
+        max-height: 360px;
         padding-left: 2px;
         padding-right: 2px;
         min-width: 340px;
@@ -743,6 +771,18 @@ tr{
         font-size: large;
         text-align: center;
 
+        .owl-nav{
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            max-height: 20px;
+
+        }
+
+        .owl-dots{
+            padding-top: 5px;
+        }
+        
         .top-top{
             margin: 0;
             padding: 0;
@@ -750,7 +790,7 @@ tr{
             table{
                 margin: 0;
                 padding: 0;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
 
                 tr{
                     td{
@@ -769,7 +809,7 @@ tr{
       color: #fff;
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 5% 40% 27% 15% 10% 3%;
+      grid-template-rows: 4% 40% 27% 15% 10% 4%;
       grid-template-areas:
           "sidebar1_ligas sidebar1_ligas"
           "left_liga left_liga"
@@ -899,6 +939,82 @@ tr{
       border-radius: 7px;
       min-width: 300px;
     
+    }
+
+    .box_sidebar1 {
+        grid-area: sidebar1;
+        border-radius: 5px;
+        background-color: #444;
+        padding-top: 2px;
+        margin-right: 0;
+                
+                .inside_sidebar_row1{
+                    margin-top: 1px;
+                    margin-left: 4%;
+                    margin-bottom: 1%;
+
+                    .flags1{
+                        height: 1.4rem;
+                        width: 2.3rem;
+
+                    }
+                    
+                }
+
+                .inside_sidebar_row2{
+                    margin-top: 0%;
+                    margin-left: 4%;
+
+                    .flags2{
+                        height: 1.4rem;
+                        width: 2.3rem;
+
+                    }
+
+                }
+
+            
+    }
+
+    .lower_box_content{
+        margin-top: 10px;
+        padding-top: 10px;
+        max-height: 380px;
+    }
+
+    .box_sidebar2 {
+        grid-area: sidebar2;
+        border-radius: 5px;
+        background-color: #444;
+        padding-top: 20px;
+        margin-right: 0;
+                
+                .inside_sidebar_row1{
+                    margin-top: 1px;
+                    margin-left: 3.5%;
+                    margin-bottom: 2%;
+
+                    .flags1{
+                        height: 1.6rem;
+                        width: 2.4rem;
+
+                    }
+                    
+                }
+
+                .inside_sidebar_row2{
+                    margin-top: 2px;
+                    margin-left: 3.5%;
+
+                    .flags2{
+                        height: 1.6rem;
+                        width: 2.4rem;
+
+                    }
+
+                }
+
+            
     }
     
   }

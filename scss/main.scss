@@ -35,8 +35,10 @@
         justify-content: center;
   }
   
-  
-  
+  .body-index{
+    max-height: 1010px;
+  }
+
   body{
     background-color: black;
   
@@ -294,6 +296,23 @@
                 "pie pie pie";
   }
   
+  #container-big {
+    max-height: 1310px;
+    margin: 1px;
+    padding: 7px;
+    background-color: rgb(31, 29, 29);
+    color: #444;
+    display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 9fr 1fr;
+        grid-template-rows: 4% 46% 44% 6%;
+        grid-template-areas:
+            "sidebar1 sidebar1"
+            "contenido1 sidebar2"
+            "contenido2 sidebar2"
+            "pie pie";
+}
+
   .container_ligas {
         margin-left: 5px;
         margin-right: 5px;
@@ -405,8 +424,8 @@
 
   
   .game1, .game2, .game3, .game4, .game5, .game6, .game7{
-    padding: 1px;
-    font-size: small;
+    padding: 0px;
+    font-size:small;
     border-style: none;
     display: grid;
     justify-content: space-evenly;
@@ -491,7 +510,7 @@
     h3{
         font-size:medium;
         text-align: center;
-        padding-bottom: 7px;
+        padding-bottom: 5px;
         padding-top: 5px;
     }
     li:nth-child(3) {
@@ -712,7 +731,7 @@ tr{
 
 
 
-/* Responsive layout - hace layout de 2 columnas en lugar de 4 */
+/* Responsive layout -  */
 @media screen and (max-width: 600px) {
 
 
@@ -757,6 +776,25 @@ tr{
 
     }
   
+    #container-big {
+        min-height: 1150px;
+        margin: 1px;
+        padding: 4px;
+        background-color: #444;
+        color: #444;
+        display: grid;
+            grid-gap: 2px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 4% 40% 5% 39% 12%;
+            grid-template-areas:
+              "sidebar1 sidebar1"
+              "contenido1 contenido1"
+              "sidebar2 sidebar2"
+              "contenido2 contenido2"
+              "pie pie";
+
+    }
+
     .container-big {
       min-height: 1150px;
       margin: 1px;

@@ -81,6 +81,10 @@ h3 {
           justify-content: center;
 }
 
+.body-index {
+  max-height: 1010px;
+}
+
 body {
   background-color: black;
 }
@@ -96,8 +100,8 @@ a {
 
 .box_sidebar1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: sidebar1;
   border-radius: 5px;
   background-color: #444;
@@ -142,9 +146,9 @@ a {
 }
 
 .box_sidebar2 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: sidebar2;
   border-radius: 5px;
   background-color: #444;
@@ -211,14 +215,14 @@ a {
 }
 
 .upper_box_content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: contenido1;
 }
 
 .lower_box_content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: contenido2;
 }
 
@@ -316,9 +320,9 @@ a {
 }
 
 .foot {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: pie;
 }
 
@@ -348,6 +352,22 @@ a {
   -ms-grid-rows: 8fr 8fr 2fr;
       grid-template-rows: 8fr 8fr 2fr;
       grid-template-areas: "sidebar1 contenido1 sidebar2" "sidebar1 contenido2 sidebar2" "pie pie pie";
+}
+
+#container-big {
+  max-height: 1310px;
+  margin: 1px;
+  padding: 7px;
+  background-color: #1f1d1d;
+  color: #444;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3px;
+  -ms-grid-columns: 9fr 1fr;
+      grid-template-columns: 9fr 1fr;
+  -ms-grid-rows: 4% 46% 44% 6%;
+      grid-template-rows: 4% 46% 44% 6%;
+      grid-template-areas: "sidebar1 sidebar1" "contenido1 sidebar2" "contenido2 sidebar2" "pie pie";
 }
 
 .container_ligas {
@@ -458,7 +478,7 @@ caption {
 }
 
 .game1, .game2, .game3, .game4, .game5, .game6, .game7 {
-  padding: 1px;
+  padding: 0px;
   font-size: small;
   border-style: none;
   display: -ms-grid;
@@ -570,7 +590,7 @@ caption {
 .uruguay_matches h3 {
   font-size: medium;
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   padding-top: 5px;
 }
 
@@ -794,7 +814,7 @@ tr {
   margin-top: 3px;
 }
 
-/* Responsive layout - hace layout de 2 columnas en lugar de 4 */
+/* Responsive layout -  */
 @media screen and (max-width: 600px) {
   header {
     display: -webkit-box;
@@ -828,6 +848,21 @@ tr {
   }
   .outer-header .banner img {
     max-width: 90%;
+  }
+  #container-big {
+    min-height: 1150px;
+    margin: 1px;
+    padding: 4px;
+    background-color: #444;
+    color: #444;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2px;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 4% 40% 5% 39% 12%;
+        grid-template-rows: 4% 40% 5% 39% 12%;
+        grid-template-areas: "sidebar1 sidebar1" "contenido1 contenido1" "sidebar2 sidebar2" "contenido2 contenido2" "pie pie";
   }
   .container-big {
     min-height: 1150px;

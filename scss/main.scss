@@ -1,11 +1,12 @@
 
-
+@import './components/indexFormat';
 @import "./partials/variables";
 @import "./partials/header";
 @import '../css/owl.carousel.min.css';
 @import '../css/owl.theme.default.min.css';
 @import './partials/funciones';
 @import './partials/extend';
+
 
 *{
     margin: 0;
@@ -29,22 +30,12 @@
     src:url(../images/font/SFSportsNight.ttf);
   }
   
-   
-  .banner{
-        display:flex;
-        justify-content: center;
-  }
-  
-  .body-index{
-    max-height: 1020px;
-    overflow-x: hidden;
-  }
-
   body{
     background-color: black;
   
   }
-  
+
+   
   ul {
     list-style-type:none
   }
@@ -297,22 +288,7 @@
                 "pie pie pie";
   }
   
-  #container-big {
-    max-height: 1350px;
-    margin: 1px;
-    padding: 7px;
-    background-color: rgb(31, 29, 29);
-    color: #444;
-    display: grid;
-        grid-gap: 3px;
-        grid-template-columns: 9fr 1fr;
-        grid-template-rows: 4% 46% 44% 6%;
-        grid-template-areas:
-            "sidebar1 sidebar1"
-            "contenido1 sidebar2"
-            "contenido2 sidebar2"
-            "pie pie";
-}
+  
 
   .container_ligas {
         margin-left: 5px;

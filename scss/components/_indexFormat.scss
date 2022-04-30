@@ -1,0 +1,104 @@
+.body-index{
+    // El Header esta en archivo _header.scss 
+    max-height: 1020px;
+    overflow-x: hidden;
+
+        .outer-header{
+            border-style:solid;
+            display: block;
+            text-align: center;
+            max-width: fit-content;
+
+            .banner{
+                display: block;
+                padding-left: 3px;
+                max-width: 460px;
+      
+                img{
+                    max-width: 90%;
+                }
+            }
+
+        }
+
+        #container-big {
+            max-height: 1350px;
+            margin: 1px;
+            padding: 7px;
+            background-color: rgb(31, 29, 29);
+            color: #444;
+            display: grid;
+                grid-gap: 3px;
+                grid-template-columns: 9fr 1fr;
+                grid-template-rows: 4% 46% 44% 6%;
+                grid-template-areas:
+                    "sidebar1 sidebar1"
+                    "contenido1 sidebar2"
+                    "contenido2 sidebar2"
+                    "pie pie";
+
+                .box_sidebar1 {
+                    grid-area: sidebar1;
+                    border-radius: 5px;
+                    background-color: #444;
+                    padding-top: 5px;
+                    margin-right: 0;
+                }
+
+                .box_sidebar2 {
+                    grid-area: sidebar2;
+                    border-radius: 5px;
+                    background-color: #444;
+                    padding-top: 5px;
+                    margin-right: 0;
+                }
+
+                .upper_box_content {
+                    grid-area: contenido1;
+                    display: block;
+                    text-align: center;
+                    max-height: 700px;
+                    background-color: #444;
+                    padding: 0 0 0 0;
+                    color: #fff;
+                    border-radius: 5px;
+                    margin-top: 0px;
+                }
+
+                .lower_box_content {
+                    max-height: 500px;
+                    background-color: #444;
+                    padding: 0.1% 0 0 0;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 60%;
+                    display: block;
+                    text-align: center;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                        .owl-carousel {
+                            padding-top: 10px;
+                            background-color: #444;
+                            color: #fff;
+                            border-radius: 5px;
+                            max-height: 480px;
+                            .owl-item{
+                                max-height: 480px;
+                                text-align: center;
+                                }
+                            }
+            
+                    h3{
+                        padding-top: 0.4%;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .foot {
+                    grid-area: pie;
+                    background-color: #999;
+                    color: black;
+                }
+        }
+  }

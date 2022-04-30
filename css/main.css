@@ -824,7 +824,6 @@ tr {
 /* Responsive layout -  */
 @media screen and (max-width: 600px) {
   body, html {
-    overflow-x: hidden;
     width: 100%;
   }
   header {

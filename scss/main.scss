@@ -37,6 +37,7 @@
   
   .body-index{
     max-height: 1010px;
+    overflow-x: hidden;
   }
 
   body{
@@ -734,6 +735,11 @@ tr{
 /* Responsive layout -  */
 @media screen and (max-width: 600px) {
 
+    body, html{
+        overflow-x:hidden;
+        width:100%;
+      }
+
 
     header {
       display: flex;
@@ -792,6 +798,7 @@ tr{
               "sidebar2 sidebar2"
               "contenido2 contenido2"
               "pie pie";
+
 
     }
 

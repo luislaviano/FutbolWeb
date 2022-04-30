@@ -82,7 +82,7 @@ h3 {
 }
 
 .body-index {
-  max-height: 1010px;
+  max-height: 1020px;
   overflow-x: hidden;
 }
 
@@ -356,7 +356,7 @@ a {
 }
 
 #container-big {
-  max-height: 1310px;
+  max-height: 1350px;
   margin: 1px;
   padding: 7px;
   background-color: #1f1d1d;
@@ -389,7 +389,7 @@ a {
 .lower_box_content {
   max-height: 500px;
   background-color: #444;
-  padding: 7px 0 0 0;
+  padding: 0.1% 0 0 0;
   color: #fff;
   border-radius: 5px;
   font-size: 60%;
@@ -412,6 +412,12 @@ a {
 .lower_box_content .owl-carousel .owl-item {
   max-height: 480px;
   text-align: center;
+}
+
+.lower_box_content h3 {
+  padding-top: 0.4%;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .upper_box_content {
@@ -557,7 +563,7 @@ caption {
 .premier_matches h3 {
   font-size: medium;
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   padding-top: 5px;
 }
 
@@ -625,7 +631,7 @@ caption {
 .argentina_matches h3 {
   font-size: medium;
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   padding-top: 5px;
 }
 
@@ -659,7 +665,7 @@ caption {
 .espana_matches h3 {
   font-size: medium;
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   padding-top: 5px;
 }
 

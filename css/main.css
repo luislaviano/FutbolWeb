@@ -455,6 +455,25 @@ body {
   background-color: black;
 }
 
+.outer-header {
+  display: block;
+  text-align: center;
+}
+
+.outer-header .banner {
+  display: block;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.outer-header .banner img {
+  max-width: 90%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -578,6 +597,12 @@ a {
 .news {
   text-align: center;
   padding-top: 20px;
+}
+
+.news h3 {
+  padding-top: 0px;
+  padding-bottom: 1px;
+  margin-bottom: 0px;
 }
 
 .upper_box_content {
@@ -898,10 +923,6 @@ caption {
   padding-top: 5px;
 }
 
-.match1, .match2, .match3, .match4, .match5, .match6, .match7 {
-  border-style: none;
-}
-
 .bandera {
   size: 1px;
 }
@@ -1023,15 +1044,6 @@ tr {
   padding-bottom: 1px;
   text-align: center;
   color: #fff;
-}
-
-.foot-qatar {
-  grid-area: pie-qatar;
-  padding-top: 3px;
-  border-style: solid;
-  border-radius: 5px;
-  background-color: #999999;
-  margin-top: 3px;
 }
 
 /* Responsive layout -  */
@@ -1302,8 +1314,8 @@ tr {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 4% 40% 27% 15% 10% 4%;
-        grid-template-rows: 4% 40% 27% 15% 10% 4%;
+    -ms-grid-rows: 4% 45% 25% 14% 9% 3%;
+        grid-template-rows: 4% 45% 25% 14% 9% 3%;
         grid-template-areas: "sidebar1_ligas sidebar1_ligas" "left_liga left_liga" "middle_liga middle_liga" "right_goleadores_liga right_asistencias_liga" "sidebar2_ligas sidebar2_ligas" "pie2 pie2";
   }
   .container_ligas .tabla_goleadores {
@@ -1368,6 +1380,10 @@ tr {
     -ms-grid-column-span: 2;
     grid-area: sidebar1_ligas;
     border-radius: 5px;
+  }
+  .container_ligas .box_sidebar1_ligas h3 {
+    font-size: medium;
+    text-align: center;
   }
   .container_ligas .box_sidebar2_ligas {
     -ms-grid-row: 5;

@@ -452,138 +452,7 @@
         border-style: none;
   }
   
-  .premier_matches{
-        display: block;
-        border: solid;
-        border-color: rgb(250, 116, 7);
-        border-radius: 7px;
-        h3{
-            font-size:medium;
-            text-align: center;
-            padding-bottom: 5px;
-            padding-top: 5px;
-        }
-        li:nth-child(3) {
-            text-align: center;
-            border-style: solid;
-            border-width:thin;
-        }
-    
-        li:nth-child(4) {
-            text-align: center;
-            border-style: solid;
-            border-width:thin;
-        }
-    
-        li:nth-child(2) {
-            text-align: center;
-        }
-      
-        li:nth-child(5) {
-            text-align: center;
-        }
-
-    }
-  
-  .uruguay_matches{
-    display: block;
-    border: solid;
-    border-color: rgb(250, 116, 7);
-    border-radius: 7px;
-    h3{
-        font-size:medium;
-        text-align: center;
-        padding-bottom: 5px;
-        padding-top: 5px;
-    }
-    li:nth-child(3) {
-        text-align: center;
-        border-style: solid;
-        border-width:thin;
-    }
-    
-    li:nth-child(4) {
-        text-align: center;
-        border-style: solid;
-        border-width:thin;
-    }
-    
-    li:nth-child(2) {
-        text-align: center;
-    }
-      
-    li:nth-child(5) {
-            text-align: center;
-    }
-
-}
-
-  .argentina_matches{
-        display: block;
-        border: solid;
-        border-color: rgb(250, 116, 7);
-        border-radius: 7px;
-        h3{
-            font-size:medium;
-            text-align: center;
-            padding-bottom: 5px;
-            padding-top: 5px;
-        }
-        li:nth-child(3) {
-            text-align: center;
-            border-style: solid;
-            border-width:thin;
-        }
-        
-        li:nth-child(4) {
-            text-align: center;
-            border-style: solid;
-            border-width:thin;
-        }
-        
-        li:nth-child(2) {
-            text-align: center;
-        }
-          
-        li:nth-child(5) {
-                text-align: center;
-        }
-  
-  }
-  
-  .espana_matches{
-        display: block;
-        border: solid;
-        border-color: rgb(250, 116, 7);
-        border-radius: 7px;
-        h3{
-            font-size:medium;
-            text-align: center;
-            padding-bottom: 5px;
-            padding-top: 5px;
-        }
-
-        li:nth-child(3) {
-            text-align: center;
-            border-style: solid;
-            border-width:thin;
-        }
-    
-        li:nth-child(4) {
-            text-align: center;
-            border-style: solid;
-            border-width:thin;
-        }
-    
-        li:nth-child(2) {
-            text-align: center;
-        }
-      
-        li:nth-child(5) {
-            text-align: center;
-        }
-  
-  }
+ 
 
 
 
@@ -764,25 +633,7 @@ tr{
 
     }
   
-    #container-big {
-        min-height: 1150px;
-        margin: 1px;
-        padding: 4px;
-        background-color: #444;
-        color: #444;
-        display: grid;
-            grid-gap: 2px;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 4% 40% 5% 39% 12%;
-            grid-template-areas:
-              "sidebar1 sidebar1"
-              "contenido1 contenido1"
-              "sidebar2 sidebar2"
-              "contenido2 contenido2"
-              "pie pie";
-
-
-    }
+    
 
     .container-big {
       min-height: 1150px;
@@ -934,7 +785,7 @@ tr{
     }
     
     .upper_box_content {
-      max-height: 420px;
+      max-height: 360px;
       display: block;
       text-align: center;
       margin-left: 2px;

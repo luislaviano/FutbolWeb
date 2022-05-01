@@ -4,15 +4,15 @@
     overflow-x: hidden;
 
         .outer-header{
-            border-style:solid;
             display: block;
             text-align: center;
-            max-width: fit-content;
 
             .banner{
                 display: block;
-                padding-left: 3px;
-                max-width: 460px;
+                border-style: none;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
       
                 img{
                     max-width: 90%;
@@ -30,7 +30,7 @@
             display: grid;
                 grid-gap: 3px;
                 grid-template-columns: 9fr 1fr;
-                grid-template-rows: 4% 46% 44% 6%;
+                grid-template-rows: 4% 45.5% 44.5% 6%;
                 grid-template-areas:
                     "sidebar1 sidebar1"
                     "contenido1 sidebar2"
@@ -57,12 +57,168 @@
                     grid-area: contenido1;
                     display: block;
                     text-align: center;
-                    max-height: 700px;
+                    max-height: 680px;
                     background-color: #444;
-                    padding: 0 0 0 0;
+                    padding: 2px 0 0 0;
                     color: #fff;
                     border-radius: 5px;
                     margin-top: 0px;
+
+                    .owl-carousel {
+                        padding-top: 2px;
+                        background-color: #444;
+                        color: #fff;
+                        border-radius: 5px;
+                        max-height: 470px;
+
+                        .owl-item{
+                            max-height: 470px;
+                            text-align: center;
+
+                        }
+                    }
+
+                    h3{
+                        padding-bottom: 0px;
+                        margin-bottom: 1px;
+                    }
+                    .match1, .match2, .match3, .match4, .match5, .match6, .match7{ 
+                        border-style: none;
+                        
+                    }
+
+                    .premier_matches{
+                        display: block;
+                        border: solid;
+                        border-color: rgb(250, 116, 7);
+                        border-radius: 7px;
+                        h3{
+                            font-size:medium;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            padding-top: 5px;
+                        }
+                        li:nth-child(3) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                    
+                        li:nth-child(4) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                    
+                        li:nth-child(2) {
+                            text-align: center;
+                        }
+                      
+                        li:nth-child(5) {
+                            text-align: center;
+                        }
+                
+                    }
+                  
+                    .uruguay_matches{
+                        display: block;
+                        border: solid;
+                        border-color: rgb(250, 116, 7);
+                        border-radius: 7px;
+                        h3{
+                            font-size:medium;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            padding-top: 5px;
+                        }
+                        li:nth-child(3) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                    
+                        li:nth-child(4) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                    
+                        li:nth-child(2) {
+                            text-align: center;
+                        }
+                      
+                        li:nth-child(5) {
+                            text-align: center;
+                        }
+                
+                    }
+                
+                    .argentina_matches{
+                        display: block;
+                        border: solid;
+                        border-color: rgb(250, 116, 7);
+                        border-radius: 7px;
+                        h3{
+                            font-size:medium;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            padding-top: 5px;
+                        }
+                        li:nth-child(3) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                        
+                        li:nth-child(4) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                        
+                        li:nth-child(2) {
+                            text-align: center;
+                        }
+                          
+                        li:nth-child(5) {
+                                text-align: center;
+                        }
+                  
+                    }
+                  
+                    .espana_matches{
+                        display: block;
+                        border: solid;
+                        border-color: rgb(250, 116, 7);
+                        border-radius: 7px;
+                        h3{
+                            font-size:medium;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            padding-top: 5px;
+                        }
+                
+                        li:nth-child(3) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                    
+                        li:nth-child(4) {
+                            text-align: center;
+                            border-style: solid;
+                            border-width:thin;
+                        }
+                    
+                        li:nth-child(2) {
+                            text-align: center;
+                        }
+                      
+                        li:nth-child(5) {
+                            text-align: center;
+                        }
+                  
+                    }
                 }
 
                 .lower_box_content {
@@ -76,15 +232,18 @@
                     text-align: center;
                     justify-content: space-between;
                     margin-bottom: 10px;
-                        .owl-carousel {
-                            padding-top: 10px;
-                            background-color: #444;
-                            color: #fff;
-                            border-radius: 5px;
-                            max-height: 480px;
-                            .owl-item{
+              
+                            .owl-carousel {
+                                padding-top: 2px;
+                                background-color: #444;
+                                color: #fff;
+                                border-radius: 5px;
                                 max-height: 480px;
-                                text-align: center;
+    
+                                .owl-item{
+                                    max-height: 470px;
+                                    text-align: center;
+        
                                 }
                             }
             
@@ -102,3 +261,108 @@
                 }
         }
   }
+
+  /* Responsive layout -  */
+@media screen and (max-width: 600px) {
+
+ .body-index, html{
+        //overflow-x: hidden;
+        width:100%;
+     
+    #container-big {
+        max-height: 400px;
+        margin: 0 1px 0 1px;
+        padding: 1px;
+        background-color: #444;
+        color: #444;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 0.5fr 6fr 1fr 7fr 1fr;
+            grid-template-areas:
+                "sidebar1 sidebar1"
+                "contenido1 contenido1"
+                "sidebar2 sidebar2"
+                "contenido2 contenido2"
+                "pie pie";
+
+                .box_sidebar1 {
+                    grid-area: sidebar1;
+                    border-radius: 5px;
+                    background-color: #444;
+                    padding-top: 3px;
+                    margin-right: 0;
+                }
+
+                .box_sidebar2 {
+                    grid-area: sidebar2;
+                    border-radius: 5px;
+                    background-color: #444;
+                    padding-top: 0px;
+                }
+
+                .upper_box_content {
+                    grid-area: contenido1;
+                    display: block;
+                    text-align: center;
+                    max-height: 250px;
+                    background-color: #444;
+                    padding: 0 0 0 0;
+                    color: #fff;
+                    border-radius: 5px;
+                    margin-top: 0px;
+
+                    h3{
+                        padding-bottom: 3px;
+                        //margin-top: 2px;
+                    }
+                }
+
+                .lower_box_content {
+                    max-height: 200px;
+                    background-color: #444;
+                    padding: 0.1% 0 0 0;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 60%;
+                    display: block;
+                    text-align: center;
+                    justify-content: space-between;
+                    margin-bottom: 0px;
+                        .owl-carousel {
+                            padding-top: 5px;
+                            background-color: #444;
+                            color: #fff;
+                            border-radius: 5px;
+                            max-height: 480px;
+                            .owl-item{
+                                max-height: 480px;
+                                text-align: center;
+                                }
+                            }
+            
+                    h3{
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .foot {
+                    grid-area: pie;
+                    display: inline-block;
+                    border-style: solid;
+                    background-color: #999999;
+                    color: black;
+                    margin-top: 0px;
+                    padding-top: 0%;
+
+                    p{
+                        display:inline-block;
+                        padding-top: 10px;
+                    }
+                }
+        }
+
+
+    }
+}

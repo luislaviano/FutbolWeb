@@ -1,6 +1,385 @@
 @import url(c:\Users\luis_\OneDrive\Escritorio\Carpeta Coderhouse\FutbolWeb\css\owl.carousel.min.css);
 @import url(c:\Users\luis_\OneDrive\Escritorio\Carpeta Coderhouse\FutbolWeb\css\owl.theme.default.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.body-index {
+  max-height: 1020px;
+  overflow-x: hidden;
+}
+
+.body-index .outer-header {
+  display: block;
+  text-align: center;
+}
+
+.body-index .outer-header .banner {
+  display: block;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body-index .outer-header .banner img {
+  max-width: 90%;
+}
+
+.body-index #container-big {
+  max-height: 1350px;
+  margin: 1px;
+  padding: 7px;
+  background-color: #1f1d1d;
+  color: #444;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3px;
+  -ms-grid-columns: 9fr 1fr;
+      grid-template-columns: 9fr 1fr;
+  -ms-grid-rows: 4% 45.5% 44.5% 6%;
+      grid-template-rows: 4% 45.5% 44.5% 6%;
+      grid-template-areas: "sidebar1 sidebar1" "contenido1 sidebar2" "contenido2 sidebar2" "pie pie";
+}
+
+.body-index #container-big .box_sidebar1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar1;
+  border-radius: 5px;
+  background-color: #444;
+  padding-top: 5px;
+  margin-right: 0;
+}
+
+.body-index #container-big .box_sidebar2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: sidebar2;
+  border-radius: 5px;
+  background-color: #444;
+  padding-top: 5px;
+  margin-right: 0;
+}
+
+.body-index #container-big .upper_box_content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contenido1;
+  display: block;
+  text-align: center;
+  max-height: 680px;
+  background-color: #444;
+  padding: 2px 0 0 0;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+.body-index #container-big .upper_box_content .owl-carousel {
+  padding-top: 2px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  max-height: 470px;
+}
+
+.body-index #container-big .upper_box_content .owl-carousel .owl-item {
+  max-height: 470px;
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content h3 {
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+}
+
+.body-index #container-big .upper_box_content .match1, .body-index #container-big .upper_box_content .match2, .body-index #container-big .upper_box_content .match3, .body-index #container-big .upper_box_content .match4, .body-index #container-big .upper_box_content .match5, .body-index #container-big .upper_box_content .match6, .body-index #container-big .upper_box_content .match7 {
+  border-style: none;
+}
+
+.body-index #container-big .upper_box_content .premier_matches {
+  display: block;
+  border: solid;
+  border-color: #fa7407;
+  border-radius: 7px;
+}
+
+.body-index #container-big .upper_box_content .premier_matches h3 {
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.body-index #container-big .upper_box_content .premier_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .premier_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .premier_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .premier_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .uruguay_matches {
+  display: block;
+  border: solid;
+  border-color: #fa7407;
+  border-radius: 7px;
+}
+
+.body-index #container-big .upper_box_content .uruguay_matches h3 {
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.body-index #container-big .upper_box_content .uruguay_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .uruguay_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .uruguay_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .uruguay_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .argentina_matches {
+  display: block;
+  border: solid;
+  border-color: #fa7407;
+  border-radius: 7px;
+}
+
+.body-index #container-big .upper_box_content .argentina_matches h3 {
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.body-index #container-big .upper_box_content .argentina_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .argentina_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .argentina_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .argentina_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .espana_matches {
+  display: block;
+  border: solid;
+  border-color: #fa7407;
+  border-radius: 7px;
+}
+
+.body-index #container-big .upper_box_content .espana_matches h3 {
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.body-index #container-big .upper_box_content .espana_matches li:nth-child(3) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .espana_matches li:nth-child(4) {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+}
+
+.body-index #container-big .upper_box_content .espana_matches li:nth-child(2) {
+  text-align: center;
+}
+
+.body-index #container-big .upper_box_content .espana_matches li:nth-child(5) {
+  text-align: center;
+}
+
+.body-index #container-big .lower_box_content {
+  max-height: 500px;
+  background-color: #444;
+  padding: 0.1% 0 0 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 60%;
+  display: block;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.body-index #container-big .lower_box_content .owl-carousel {
+  padding-top: 2px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  max-height: 480px;
+}
+
+.body-index #container-big .lower_box_content .owl-carousel .owl-item {
+  max-height: 470px;
+  text-align: center;
+}
+
+.body-index #container-big .lower_box_content h3 {
+  padding-top: 0.4%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.body-index #container-big .foot {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: pie;
+  background-color: #999;
+  color: black;
+}
+
+/* Responsive layout -  */
+@media screen and (max-width: 600px) {
+  .body-index, html {
+    width: 100%;
+  }
+  .body-index #container-big, html #container-big {
+    max-height: 400px;
+    margin: 0 1px 0 1px;
+    padding: 1px;
+    background-color: #444;
+    color: #444;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2px;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 0.5fr 6fr 1fr 7fr 1fr;
+        grid-template-rows: 0.5fr 6fr 1fr 7fr 1fr;
+        grid-template-areas: "sidebar1 sidebar1" "contenido1 contenido1" "sidebar2 sidebar2" "contenido2 contenido2" "pie pie";
+  }
+  .body-index #container-big .box_sidebar1, html #container-big .box_sidebar1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: sidebar1;
+    border-radius: 5px;
+    background-color: #444;
+    padding-top: 3px;
+    margin-right: 0;
+  }
+  .body-index #container-big .box_sidebar2, html #container-big .box_sidebar2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: sidebar2;
+    border-radius: 5px;
+    background-color: #444;
+    padding-top: 0px;
+  }
+  .body-index #container-big .upper_box_content, html #container-big .upper_box_content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contenido1;
+    display: block;
+    text-align: center;
+    max-height: 250px;
+    background-color: #444;
+    padding: 0 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0px;
+  }
+  .body-index #container-big .upper_box_content h3, html #container-big .upper_box_content h3 {
+    padding-bottom: 3px;
+  }
+  .body-index #container-big .lower_box_content, html #container-big .lower_box_content {
+    max-height: 200px;
+    background-color: #444;
+    padding: 0.1% 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 60%;
+    display: block;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0px;
+  }
+  .body-index #container-big .lower_box_content .owl-carousel, html #container-big .lower_box_content .owl-carousel {
+    padding-top: 5px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    max-height: 480px;
+  }
+  .body-index #container-big .lower_box_content .owl-carousel .owl-item, html #container-big .lower_box_content .owl-carousel .owl-item {
+    max-height: 480px;
+    text-align: center;
+  }
+  .body-index #container-big .lower_box_content h3, html #container-big .lower_box_content h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .body-index #container-big .foot, html #container-big .foot {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: pie;
+    display: inline-block;
+    border-style: solid;
+    background-color: #999999;
+    color: black;
+    margin-top: 0px;
+    padding-top: 0%;
+  }
+  .body-index #container-big .foot p, html #container-big .foot p {
+    display: inline-block;
+    padding-top: 10px;
+  }
+}
+
 h3 {
   color: #fff;
 }
@@ -72,20 +451,6 @@ h3 {
   src: url(../images/font/SFSportsNight.ttf);
 }
 
-.banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.body-index {
-  max-height: 1020px;
-  overflow-x: hidden;
-}
-
 body {
   background-color: black;
 }
@@ -101,8 +466,8 @@ a {
 
 .box_sidebar1 {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: sidebar1;
   border-radius: 5px;
   background-color: #444;
@@ -147,9 +512,9 @@ a {
 }
 
 .box_sidebar2 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   grid-area: sidebar2;
   border-radius: 5px;
   background-color: #444;
@@ -216,14 +581,14 @@ a {
 }
 
 .upper_box_content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: contenido1;
 }
 
 .lower_box_content {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: contenido2;
 }
 
@@ -321,9 +686,9 @@ a {
 }
 
 .foot {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: pie;
 }
 
@@ -353,22 +718,6 @@ a {
   -ms-grid-rows: 8fr 8fr 2fr;
       grid-template-rows: 8fr 8fr 2fr;
       grid-template-areas: "sidebar1 contenido1 sidebar2" "sidebar1 contenido2 sidebar2" "pie pie pie";
-}
-
-#container-big {
-  max-height: 1350px;
-  margin: 1px;
-  padding: 7px;
-  background-color: #1f1d1d;
-  color: #444;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 3px;
-  -ms-grid-columns: 9fr 1fr;
-      grid-template-columns: 9fr 1fr;
-  -ms-grid-rows: 4% 46% 44% 6%;
-      grid-template-rows: 4% 46% 44% 6%;
-      grid-template-areas: "sidebar1 sidebar1" "contenido1 sidebar2" "contenido2 sidebar2" "pie pie";
 }
 
 .container_ligas {
@@ -553,142 +902,6 @@ caption {
   border-style: none;
 }
 
-.premier_matches {
-  display: block;
-  border: solid;
-  border-color: #fa7407;
-  border-radius: 7px;
-}
-
-.premier_matches h3 {
-  font-size: medium;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.premier_matches li:nth-child(3) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.premier_matches li:nth-child(4) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.premier_matches li:nth-child(2) {
-  text-align: center;
-}
-
-.premier_matches li:nth-child(5) {
-  text-align: center;
-}
-
-.uruguay_matches {
-  display: block;
-  border: solid;
-  border-color: #fa7407;
-  border-radius: 7px;
-}
-
-.uruguay_matches h3 {
-  font-size: medium;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.uruguay_matches li:nth-child(3) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.uruguay_matches li:nth-child(4) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.uruguay_matches li:nth-child(2) {
-  text-align: center;
-}
-
-.uruguay_matches li:nth-child(5) {
-  text-align: center;
-}
-
-.argentina_matches {
-  display: block;
-  border: solid;
-  border-color: #fa7407;
-  border-radius: 7px;
-}
-
-.argentina_matches h3 {
-  font-size: medium;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.argentina_matches li:nth-child(3) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.argentina_matches li:nth-child(4) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.argentina_matches li:nth-child(2) {
-  text-align: center;
-}
-
-.argentina_matches li:nth-child(5) {
-  text-align: center;
-}
-
-.espana_matches {
-  display: block;
-  border: solid;
-  border-color: #fa7407;
-  border-radius: 7px;
-}
-
-.espana_matches h3 {
-  font-size: medium;
-  text-align: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.espana_matches li:nth-child(3) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.espana_matches li:nth-child(4) {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-}
-
-.espana_matches li:nth-child(2) {
-  text-align: center;
-}
-
-.espana_matches li:nth-child(5) {
-  text-align: center;
-}
-
 .bandera {
   size: 1px;
 }
@@ -859,21 +1072,6 @@ tr {
   .outer-header .banner img {
     max-width: 90%;
   }
-  #container-big {
-    min-height: 1150px;
-    margin: 1px;
-    padding: 4px;
-    background-color: #444;
-    color: #444;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 2px;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    -ms-grid-rows: 4% 40% 5% 39% 12%;
-        grid-template-rows: 4% 40% 5% 39% 12%;
-        grid-template-areas: "sidebar1 sidebar1" "contenido1 contenido1" "sidebar2 sidebar2" "contenido2 contenido2" "pie pie";
-  }
   .container-big {
     min-height: 1150px;
     margin: 1px;
@@ -1023,7 +1221,7 @@ tr {
     display: block;
   }
   .upper_box_content {
-    max-height: 420px;
+    max-height: 360px;
     display: block;
     text-align: center;
     margin-left: 2px;

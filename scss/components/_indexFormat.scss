@@ -22,15 +22,15 @@
         }
 
         #container-big {
-            max-height: 1350px;
+            max-height: 1420px;
             margin: 1px;
             padding: 7px;
             background-color: rgb(31, 29, 29);
             color: #444;
             display: grid;
                 grid-gap: 3px;
-                grid-template-columns: 9fr 1fr;
-                grid-template-rows: 4% 45.5% 44.5% 6%;
+                grid-template-columns: 95% 5%;
+                grid-template-rows: 4% 46.5% 44.5% 5%;
                 grid-template-areas:
                     "sidebar1 sidebar1"
                     "contenido1 sidebar2"
@@ -57,12 +57,13 @@
                     grid-area: contenido1;
                     display: block;
                     text-align: center;
-                    max-height: 680px;
+                    max-height: 940px;
                     background-color: #444;
-                    padding: 2px 0 0 0;
+                    padding: 2px 1% 2% 0;
                     color: #fff;
                     border-radius: 5px;
                     margin-top: 0px;
+                    
 
                     .owl-carousel {
                         padding-top: 2px;
@@ -70,10 +71,13 @@
                         color: #fff;
                         border-radius: 5px;
                         max-height: 470px;
+                        max-width: 1260px;
 
                         .owl-item{
                             max-height: 470px;
                             text-align: center;
+                            max-width: 313px;
+                            padding-left: 1%;
 
                         }
                     }
@@ -92,6 +96,7 @@
                         border: solid;
                         border-color: rgb(250, 116, 7);
                         border-radius: 7px;
+                        
                         h3{
                             font-size:medium;
                             text-align: center;
@@ -224,7 +229,7 @@
                 .lower_box_content {
                     max-height: 500px;
                     background-color: #444;
-                    padding: 0.1% 0 0 0;
+                    padding: 0.1% 1% 1% 0;
                     color: #fff;
                     border-radius: 5px;
                     font-size: 60%;
@@ -235,14 +240,27 @@
               
                             .owl-carousel {
                                 padding-top: 2px;
+                                padding-left: 0;
                                 background-color: #444;
                                 color: #fff;
                                 border-radius: 5px;
                                 max-height: 480px;
-    
+
                                 .owl-item{
                                     max-height: 470px;
+                                    padding-left: 1%;
                                     text-align: center;
+
+                                    th:nth-child(1){
+                                        width: 3rem;
+                                    }
+
+                                    th:nth-child(2){
+                                        width: 12rem;
+                                    }
+                                    th:nth-child(n+3):nth-child(-n+10){
+                                        width: 2rem;
+                                    }
         
                                 }
                             }
@@ -305,12 +323,39 @@
                     grid-area: contenido1;
                     display: block;
                     text-align: center;
-                    max-height: 250px;
+                    max-height: 160px;
+                    width: 390px;
                     background-color: #444;
-                    padding: 0 0 0 0;
+                    padding: 0 0 0 0%;
                     color: #fff;
                     border-radius: 5px;
                     margin-top: 0px;
+
+                    .owl-carousel {
+                        display: inline-block;
+                        padding-top: 5px;
+                        background-color: #444;
+                        color: #fff;
+                        border-radius: 5px;
+                        max-height: 200px; // altura exacta
+                        width: 300px;
+                        margin-left: 0.8%;
+                        padding-left: 0;
+                        //margin-right: 1%;
+                        //padding-left: 0.5rem;
+                        //padding-right: 0.5rem;
+                        
+                        .owl-item{
+                            max-height: 300px;
+                            width: 215px;
+                            margin-left: 0.3%;
+                            margin-right: 1.3%;
+                            padding-right: 1rem;
+                            text-align: center;
+                        }
+
+
+                    }
 
                     h3{
                         padding-bottom: 3px;
@@ -334,12 +379,13 @@
                             background-color: #444;
                             color: #fff;
                             border-radius: 5px;
-                            max-height: 480px;
+                            max-height: 400px;
                             .owl-item{
-                                max-height: 480px;
+                                max-height: 380px;
                                 text-align: center;
-                                }
+                                padding-right: 0.8%;
                             }
+                        }
             
                     h3{
                         padding-bottom: 0;

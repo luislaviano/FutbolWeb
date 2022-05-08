@@ -8,22 +8,28 @@
     <title>Registrate</title>
 </head>
 <body>
-    <form action="">
-        <div class="container">
-          <h1>Registrate</h1>
-          <p>Por favor completa tus datos para crear una cuenta.</p>
-                
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Ingrese Email" name="email" id="email" required>
-      
-          <label for="passw"><b>contraseña</b></label>
-          <input type="password" placeholder="Ingrese contraseña" name="passw" id="passw" required>
-      
-          <label for="repe-passw"><b>Repite tu contraseña</b></label>
-          <input type="password" placeholder="Repite tu contraseña" name="repe-passw" id="repe-passw" required>
-                
-          <p>Al crear una cuenta estas de acuerdo con nuestros <a href="#">Terminos & Condiciones</a>.</p>
-          <button type="submit" class="botonregistro">Register</button>
-        </div>
+  <form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
 </body>
 </html>

@@ -20,6 +20,17 @@
             }
 
         }
+        
+        .modal-header{
+            display: block;
+            text-align: center;
+            
+            img{
+                height: 80%;
+                width: 80%;
+                
+            }
+        }
 
         #container-big {
             max-height: 1420px;
@@ -286,9 +297,10 @@
  .body-index, html{
         //overflow-x: hidden;
         width:100%;
+        height: 700px;
      
     #container-big {
-        max-height: 400px;
+        max-height: 600px;
         margin: 0 1px 0 1px;
         padding: 1px;
         background-color: #444;
@@ -296,7 +308,7 @@
         display: grid;
         grid-gap: 2px;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 0.5fr 6fr 1fr 7fr 1fr;
+        grid-template-rows: 1fr 12fr 0.2fr 14fr 2fr;
             grid-template-areas:
                 "sidebar1 sidebar1"
                 "contenido1 contenido1"
@@ -317,13 +329,14 @@
                     border-radius: 5px;
                     background-color: #444;
                     padding-top: 0px;
+                    height: 20px;
                 }
 
                 .upper_box_content {
                     grid-area: contenido1;
                     display: block;
                     text-align: center;
-                    max-height: 160px;
+                    max-height: 270px;
                     width: 390px;
                     background-color: #444;
                     padding: 0 0 0 0%;
@@ -337,13 +350,10 @@
                         background-color: #444;
                         color: #fff;
                         border-radius: 5px;
-                        max-height: 200px; // altura exacta
+                        max-height: 300px; // altura exacta
                         width: 300px;
                         margin-left: 0.8%;
                         padding-left: 0;
-                        //margin-right: 1%;
-                        //padding-left: 0.5rem;
-                        //padding-right: 0.5rem;
                         
                         .owl-item{
                             max-height: 300px;
@@ -364,9 +374,10 @@
                 }
 
                 .lower_box_content {
-                    max-height: 200px;
+                    max-height: 300px;
                     background-color: #444;
-                    padding: 0.1% 0 0 0;
+                    margin-top: 0;
+                    padding: 0 0 0 0;
                     color: #fff;
                     border-radius: 5px;
                     font-size: 60%;

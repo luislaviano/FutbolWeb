@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/ticker.css">
+    <!--  estos link de aca abajo son nuevos 
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <title>FutbolTotal</title>
 </head>
 <body class="body-index">
@@ -60,12 +66,46 @@
                     <a class="dropdown-item" href="#">Uruguay</a>
                   </div>
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                   <a class="nav-link" href="livescore.html" alt="link de navegacion a Livescore">Livescore</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="clubes.html" alt="link de navegacion a Clubes">Clubes</a>
+                </li> -->
+                <li class="nav-item" id="login">
+                  <a data-toggle="modal" data-target="#myModal" href="#myModal" class="nav-link">Login</a>
+                  
+                  <div id="myModal" class="modal fade">
+                    <div class="modal-dialog modal-login">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="avatar">
+                            <img src="./images/avatar.png" alt="Avatar">
+                          </div>				
+                          <h4 class="modal-title">Member Login</h4>	
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="/examples/actions/confirmation.php" method="post">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                            </div>        
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="#">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>     
                 </li>
+              
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

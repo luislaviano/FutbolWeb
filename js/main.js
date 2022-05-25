@@ -24,17 +24,6 @@ $(document).ready(function() {
    
     });
 
-    $(".owl-fecha-qatar").owlCarousel({
-  
-        responsiveClass:true,
-        responsive:{
-            1000:{
-                items: 6,
-                singleItem: true,
-                nav:true,
-                center: true
-            }
-        }
-    }); 
+    
     
 })

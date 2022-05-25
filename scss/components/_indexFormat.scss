@@ -33,7 +33,7 @@
         }
 
         #container-big {
-            max-height: 1420px;
+            max-height: 800px;
             margin: 1px;
             padding: 7px;
             background-color: rgb(31, 29, 29);
@@ -41,11 +41,10 @@
             display: grid;
                 grid-gap: 3px;
                 grid-template-columns: 95% 5%;
-                grid-template-rows: 4% 46.5% 44.5% 5%;
+                grid-template-rows: 5% 90% 5%;
                 grid-template-areas:
                     "sidebar1 sidebar1"
                     "contenido1 sidebar2"
-                    "contenido2 sidebar2"
                     "pie pie";
 
                 .box_sidebar1 {
@@ -68,7 +67,7 @@
                     grid-area: contenido1;
                     display: block;
                     text-align: center;
-                    max-height: 940px;
+                    max-height: 1200px;
                     background-color: #444;
                     padding: 2px 1% 2% 0;
                     color: #fff;
@@ -237,51 +236,7 @@
                     }
                 }
 
-                .lower_box_content {
-                    max-height: 500px;
-                    background-color: #444;
-                    padding: 0.1% 1% 1% 0;
-                    color: #fff;
-                    border-radius: 5px;
-                    font-size: 60%;
-                    display: block;
-                    text-align: center;
-                    justify-content: space-between;
-                    margin-bottom: 10px;
-              
-                            .owl-carousel {
-                                padding-top: 2px;
-                                padding-left: 0;
-                                background-color: #444;
-                                color: #fff;
-                                border-radius: 5px;
-                                max-height: 480px;
-
-                                .owl-item{
-                                    max-height: 470px;
-                                    padding-left: 1%;
-                                    text-align: center;
-
-                                    th:nth-child(1){
-                                        width: 3rem;
-                                    }
-
-                                    th:nth-child(2){
-                                        width: 12rem;
-                                    }
-                                    th:nth-child(n+3):nth-child(-n+10){
-                                        width: 2rem;
-                                    }
-        
-                                }
-                            }
-            
-                    h3{
-                        padding-top: 0.4%;
-                        padding-bottom: 0;
-                        margin-bottom: 0;
-                    }
-                }
+                
 
                 .foot {
                     grid-area: pie;

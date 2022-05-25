@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 ul {
@@ -62,7 +62,7 @@ header .logo {
 
 header .titulo {
   font-family: "myFirstFont";
-  background-color: black;
+  background-color: whitesmoke;
   color: #fa7407;
 }
 

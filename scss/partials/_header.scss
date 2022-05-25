@@ -1,30 +1,25 @@
 header{
-    margin-top: 10px;
+    min-width: 250px;
+    margin-top: 2px;
     display: block;
     justify-content: space-between;
     
     .tittle-container{
+        padding-top: 20px;
+        min-width: 50px;
         display:flex;
         justify-content: center;
 
         .titulo{
+            min-width: 250px;
+            border-radius: 7px;
+            padding-top: 5px;
             font-family: "myFirstFont";
-            background-color: black;
+            background-color: whitesmoke;
             color: rgb(250, 116, 7);
             text-align: center;
           }
     }
 
-    .logo-container{
-        .logo{
-            height: 5%;
-            margin-top: 5px;
-            margin-left: 15px;
-            position: absolute;
-            border-style: solid ;
-            border-color: black;
-            border-radius: 10px;
-        }
-    }
 
 }

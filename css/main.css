@@ -53,8 +53,8 @@
 
 .body-index #container-big .box_sidebar1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: sidebar1;
   border-radius: 5px;
   background-color: #444;
@@ -63,9 +63,8 @@
 }
 
 .body-index #container-big .box_sidebar2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: sidebar2;
   border-radius: 5px;
   background-color: #444;
@@ -74,8 +73,8 @@
 }
 
 .body-index #container-big .upper_box_content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: contenido1;
   display: block;
   text-align: center;
@@ -251,7 +250,7 @@
 .body-index #container-big .foot {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: pie;
   background-color: #999;
   color: black;
@@ -280,8 +279,8 @@
   }
   .body-index #container-big .box_sidebar1, html #container-big .box_sidebar1 {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: sidebar1;
     border-radius: 5px;
     background-color: #444;
@@ -289,9 +288,9 @@
     margin-right: 0;
   }
   .body-index #container-big .box_sidebar2, html #container-big .box_sidebar2 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: sidebar2;
     border-radius: 5px;
     background-color: #444;
@@ -299,8 +298,9 @@
     height: 20px;
   }
   .body-index #container-big .upper_box_content, html #container-big .upper_box_content {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: contenido1;
     display: block;
     text-align: center;
@@ -368,7 +368,7 @@
   .body-index #container-big .foot, html #container-big .foot {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
     grid-area: pie;
     display: inline-block;
     border-style: solid;
@@ -421,16 +421,6 @@ h3 {
   color: #b3b3b3;
 }
 
-.tabla_goleadores, .tabla_asistencias {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 5px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -452,6 +442,11 @@ h3 {
 
 body {
   background-color: #cfadad;
+  overflow: auto;
+}
+
+.modal {
+  overflow-y: auto;
 }
 
 .outer-header {
@@ -486,115 +481,26 @@ a {
   height: 100%;
 }
 
-.box_sidebar1 {
+.leftInsideContainer {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  grid-area: sidebar1;
+  grid-area: leftCont;
   border-radius: 5px;
   background-color: #444;
   padding-top: 5px;
   margin-right: 0;
 }
 
-.box_sidebar1 .inside_sidebar_row1 .flags1 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar1 .inside_sidebar_row1 .flags2 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar1 .inside_sidebar_row2 .flags1 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar1 .inside_sidebar_row2 .flags2 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar2 {
+.rightInsideContainer {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: sidebar2;
+  -ms-grid-column: 2;
+  grid-area: rightCont;
   border-radius: 5px;
   background-color: #444;
   padding-top: 5px;
   margin-right: 0;
-}
-
-.box_sidebar2 .inside_sidebar_row1 .flags1 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar2 .inside_sidebar_row1 .flags2 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar2 .inside_sidebar_row2 .flags1 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar2 .inside_sidebar_row2 .flags2 {
-  display: block;
-  margin-left: 33%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  height: 30px;
-  width: 48px;
-}
-
-.box_sidebar1_ligas {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: sidebar1_ligas;
-  border-radius: 5px;
-}
-
-.box_sidebar2_ligas {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 5;
-  grid-area: sidebar2_ligas;
-  border-radius: 5px;
-  padding-left: 5px;
 }
 
 .news {
@@ -608,131 +514,14 @@ a {
   margin-bottom: 0px;
 }
 
-.upper_box_content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: contenido1;
-}
-
-.lower_box_content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: contenido2;
-}
-
-.box_left_liga {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: left_liga;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: none;
-}
-
-.box_right_goleadores_liga {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: right_goleadores_liga;
-  background-color: #444;
-  border-style: solid;
-  border-color: #fa7407;
-  border-radius: 5px;
-}
-
-.box_right_goleadores_liga h3 {
-  text-align: center;
-}
-
-.box_right_asistencias_liga {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: right_asistencias_liga;
-  background-color: #444;
-  border-style: solid;
-  border-color: #fa7407;
-  border-radius: 5px;
-}
-
-.box_right_asistencias_liga h3 {
-  text-align: center;
-}
-
-.box_left_liga {
-  border-style: solid;
-  border-color: #fa7407;
-  min-width: 347px;
-  border-radius: 5px;
-  background-color: #444;
-  color: #fff;
-}
-
-.box_middle_liga {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: middle_liga;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: none;
-  background-color: #444;
-  display: inline;
-  padding-right: 2px;
-  border-style: solid;
-  border-color: #fa7407;
-  min-width: 270px;
-  border-radius: 5px;
-}
-
-.box_middle_liga h3 {
-  padding-bottom: 2px;
-  text-align: center;
-  color: #fff;
-}
-
-.tabla_goleadores {
-  margin: 1px;
-}
-
-.tabla_goleadores td {
-  padding-right: 10px;
-  padding-bottom: 1px;
-}
-
-.tabla_asistencias h3 {
-  margin-top: 25px;
-}
-
-.tabla_asistencias td {
-  padding-right: 10px;
-  padding-bottom: 1px;
-}
-
 .foot {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: pie;
 }
 
-.foot_ligas {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: pie2;
-  padding-top: 3px;
-  border-style: solid;
-  border-radius: 5px;
-  background-color: #999999;
-  margin-top: 3px;
-}
-
-.container-big {
+.bigContainer {
   max-height: 1200px;
   margin: 1px;
   padding: 7px;
@@ -741,95 +530,11 @@ a {
   display: -ms-grid;
   display: grid;
   grid-gap: 2px;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
   -ms-grid-rows: 8fr 8fr 2fr;
       grid-template-rows: 8fr 8fr 2fr;
-      grid-template-areas: "sidebar1 contenido1 sidebar2" "sidebar1 contenido2 sidebar2" "pie pie pie";
-}
-
-.container_ligas {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 7px;
-  background-color: whitesmoke;
-  color: #fff;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 4fr 3fr 3fr 2fr;
-      grid-template-columns: 1fr 4fr 3fr 3fr 2fr;
-  -ms-grid-rows: 6fr 6fr 1fr;
-      grid-template-rows: 6fr 6fr 1fr;
-      grid-template-areas: "sidebar1_ligas left_liga middle_liga right_goleadores_liga sidebar2_ligas" "sidebar1_ligas left_liga middle_liga right_asistencias_liga sidebar2_ligas" "pie2 pie2 pie2 pie2 pie2";
-}
-
-.lower_box_content {
-  max-height: 500px;
-  background-color: #444;
-  padding: 0.1% 0 0 0;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 60%;
-  display: block;
-  text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.lower_box_content .owl-carousel {
-  padding-top: 10px;
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  max-height: 480px;
-}
-
-.lower_box_content .owl-carousel .owl-item {
-  max-height: 480px;
-  text-align: center;
-}
-
-.lower_box_content h3 {
-  padding-top: 0.4%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.upper_box_content {
-  display: block;
-  text-align: center;
-  max-height: 1000px;
-  background-color: #444;
-  padding: 0 0 0 0;
-  color: #fff;
-  border-radius: 5px;
-  margin-top: 0px;
-}
-
-.lower_outer_box_content {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 40%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "uruguaya argentina premier espana" "uruguaya argentina premier espana";
-}
-
-.uruguaya, .argentina, .premier, .espana {
-  height: 25%;
-  text-align: center;
-  min-width: 80px;
-  border-style: solid;
-  border-color: #fa7407;
-  border-radius: 7px;
-  font-size: small;
+      grid-template-areas: "leftCont rightCont" "leftCont rightCont" "pie pie";
 }
 
 td {
@@ -861,192 +566,12 @@ caption {
   height: 190px;
 }
 
-.game1, .game2, .game3, .game4, .game5, .game6, .game7 {
-  padding: 0px;
-  font-size: small;
-  border-style: none;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-grid-columns: 10% 35% 10% 10% 35%;
-      grid-template-columns: 10% 35% 10% 10% 35%;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "lefty1 lefty2 centered righty1 righty2";
-}
-
-.game1 .lefty1, .game2 .lefty1, .game3 .lefty1, .game4 .lefty1, .game5 .lefty1, .game6 .lefty1, .game7 .lefty1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: lefty1;
-}
-
-.game1 .lefty2, .game2 .lefty2, .game3 .lefty2, .game4 .lefty2, .game5 .lefty2, .game6 .lefty2, .game7 .lefty2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: lefty2;
-}
-
-.game1 .righty1, .game2 .righty1, .game3 .righty1, .game4 .righty1, .game5 .righty1, .game6 .righty1, .game7 .righty1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: righty1;
-}
-
-.game1 .righty2, .game2 .righty2, .game3 .righty2, .game4 .righty2, .game5 .righty2, .game6 .righty2, .game7 .righty2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: righty2;
-}
-
-.game1 .centered, .game2 .centered, .game3 .centered, .game4 .centered, .game5 .centered, .game6 .centered, .game7 .centered {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: centered;
-}
-
-.matches_liga {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 2px;
-  background-color: #444;
-}
-
-.matches_liga td {
-  padding-right: 10px;
-  padding-bottom: 2px;
-  color: #fff;
-  text-align: center;
-  padding-top: 5px;
-}
-
 .bandera {
   size: 1px;
 }
 
 tr {
   margin-bottom: 50px;
-}
-
-.grupoA, .grupoB, .grupoC, .grupoD, .grupoE, .grupoF, .grupoG, .grupoH {
-  display: inline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 5px;
-  justify-content: center;
-  gap: none;
-  background-color: #444;
-  display: block;
-  padding-right: 2px;
-  border-style: solid;
-  border-color: #fa7407;
-  min-width: 100px;
-  border-radius: 5px;
-}
-
-.grupoA .top-top, .grupoB .top-top, .grupoC .top-top, .grupoD .top-top, .grupoE .top-top, .grupoF .top-top, .grupoG .top-top, .grupoH .top-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.grupoA .top-top table, .grupoB .top-top table, .grupoC .top-top table, .grupoD .top-top table, .grupoE .top-top table, .grupoF .top-top table, .grupoG .top-top table, .grupoH .top-top table {
-  display: block;
-  font-size: small;
-}
-
-.grupoA .top-top table caption, .grupoB .top-top table caption, .grupoC .top-top table caption, .grupoD .top-top table caption, .grupoE .top-top table caption, .grupoF .top-top table caption, .grupoG .top-top table caption, .grupoH .top-top table caption {
-  min-width: 50px;
-}
-
-.grupoA .carousel-indicators, .grupoB .carousel-indicators, .grupoC .carousel-indicators, .grupoD .carousel-indicators, .grupoE .carousel-indicators, .grupoF .carousel-indicators, .grupoG .carousel-indicators, .grupoH .carousel-indicators {
-  position: -webkit-sticky;
-  position: sticky;
-  padding-top: 5px;
-}
-
-.grupoA .carousel-item .container, .grupoB .carousel-item .container, .grupoC .carousel-item .container, .grupoD .carousel-item .container, .grupoE .carousel-item .container, .grupoF .carousel-item .container, .grupoG .carousel-item .container, .grupoH .carousel-item .container {
-  display: block;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.grupoA .carousel-item .container table, .grupoB .carousel-item .container table, .grupoC .carousel-item .container table, .grupoD .carousel-item .container table, .grupoE .carousel-item .container table, .grupoF .carousel-item .container table, .grupoG .carousel-item .container table, .grupoH .carousel-item .container table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.grupoA .carousel-item .container table .Fecha1, .grupoB .carousel-item .container table .Fecha1, .grupoC .carousel-item .container table .Fecha1, .grupoD .carousel-item .container table .Fecha1, .grupoE .carousel-item .container table .Fecha1, .grupoF .carousel-item .container table .Fecha1, .grupoG .carousel-item .container table .Fecha1, .grupoH .carousel-item .container table .Fecha1 {
-  display: block;
-  margin-bottom: 0;
-}
-
-.grupoA .carousel-item .container table .Fecha1 td, .grupoB .carousel-item .container table .Fecha1 td, .grupoC .carousel-item .container table .Fecha1 td, .grupoD .carousel-item .container table .Fecha1 td, .grupoE .carousel-item .container table .Fecha1 td, .grupoF .carousel-item .container table .Fecha1 td, .grupoG .carousel-item .container table .Fecha1 td, .grupoH .carousel-item .container table .Fecha1 td {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-style: none;
-}
-
-.grupoA .carousel-item .container table .dia-Fecha1, .grupoB .carousel-item .container table .dia-Fecha1, .grupoC .carousel-item .container table .dia-Fecha1, .grupoD .carousel-item .container table .dia-Fecha1, .grupoE .carousel-item .container table .dia-Fecha1, .grupoF .carousel-item .container table .dia-Fecha1, .grupoG .carousel-item .container table .dia-Fecha1, .grupoH .carousel-item .container table .dia-Fecha1 {
-  display: block;
-  margin-bottom: 0;
-}
-
-.grupoA .carousel-item .container table .dia-Fecha1 td, .grupoB .carousel-item .container table .dia-Fecha1 td, .grupoC .carousel-item .container table .dia-Fecha1 td, .grupoD .carousel-item .container table .dia-Fecha1 td, .grupoE .carousel-item .container table .dia-Fecha1 td, .grupoF .carousel-item .container table .dia-Fecha1 td, .grupoG .carousel-item .container table .dia-Fecha1 td, .grupoH .carousel-item .container table .dia-Fecha1 td {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-style: none;
-}
-
-.grupoA .carousel-item .container table .celda-izq, .grupoA .carousel-item .container table .celda-der, .grupoB .carousel-item .container table .celda-izq, .grupoB .carousel-item .container table .celda-der, .grupoC .carousel-item .container table .celda-izq, .grupoC .carousel-item .container table .celda-der, .grupoD .carousel-item .container table .celda-izq, .grupoD .carousel-item .container table .celda-der, .grupoE .carousel-item .container table .celda-izq, .grupoE .carousel-item .container table .celda-der, .grupoF .carousel-item .container table .celda-izq, .grupoF .carousel-item .container table .celda-der, .grupoG .carousel-item .container table .celda-izq, .grupoG .carousel-item .container table .celda-der, .grupoH .carousel-item .container table .celda-izq, .grupoH .carousel-item .container table .celda-der {
-  width: 2rem;
-  height: 1.33rem;
-}
-
-.grupoA .carousel-item .container table .celda-res-izq, .grupoA .carousel-item .container table .celda-res-der, .grupoB .carousel-item .container table .celda-res-izq, .grupoB .carousel-item .container table .celda-res-der, .grupoC .carousel-item .container table .celda-res-izq, .grupoC .carousel-item .container table .celda-res-der, .grupoD .carousel-item .container table .celda-res-izq, .grupoD .carousel-item .container table .celda-res-der, .grupoE .carousel-item .container table .celda-res-izq, .grupoE .carousel-item .container table .celda-res-der, .grupoF .carousel-item .container table .celda-res-izq, .grupoF .carousel-item .container table .celda-res-der, .grupoG .carousel-item .container table .celda-res-izq, .grupoG .carousel-item .container table .celda-res-der, .grupoH .carousel-item .container table .celda-res-izq, .grupoH .carousel-item .container table .celda-res-der {
-  text-align: center;
-  min-width: 1.5rem;
-  height: 1.33rem;
-}
-
-.grupoA .carousel-item .container table tr td, .grupoB .carousel-item .container table tr td, .grupoC .carousel-item .container table tr td, .grupoD .carousel-item .container table tr td, .grupoE .carousel-item .container table tr td, .grupoF .carousel-item .container table tr td, .grupoG .carousel-item .container table tr td, .grupoH .carousel-item .container table tr td {
-  font-size: medium;
-  min-width: 2rem;
-  text-align: center;
-}
-
-.grupoA .carousel-item .container table tr img, .grupoB .carousel-item .container table tr img, .grupoC .carousel-item .container table tr img, .grupoD .carousel-item .container table tr img, .grupoE .carousel-item .container table tr img, .grupoF .carousel-item .container table tr img, .grupoG .carousel-item .container table tr img, .grupoH .carousel-item .container table tr img {
-  width: 2rem;
-  height: 1.33rem;
-}
-
-.grupoA .carousel-item h3, .grupoB .carousel-item h3, .grupoC .carousel-item h3, .grupoD .carousel-item h3, .grupoE .carousel-item h3, .grupoF .carousel-item h3, .grupoG .carousel-item h3, .grupoH .carousel-item h3 {
-  padding-bottom: 1px;
-  text-align: center;
-  color: #fff;
 }
 
 /* Responsive layout -  */
@@ -1087,7 +612,7 @@ tr {
   .outer-header .banner img {
     max-width: 90%;
   }
-  .container-big {
+  .bigContainer {
     min-height: 1150px;
     margin: 1px;
     padding: 4px;
@@ -1096,128 +621,23 @@ tr {
     display: -ms-grid;
     display: grid;
     grid-gap: 2px;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    -ms-grid-rows: 4% 40% 5% 39% 10%;
-        grid-template-rows: 4% 40% 5% 39% 10%;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
         grid-template-areas: "sidebar1 sidebar1" "contenido1 contenido1" "sidebar2 sidebar2" "contenido2 contenido2" "pie pie";
   }
-  .container-big .box_sidebar1 {
+  .bigContainer .leftInsideContainer {
     -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: sidebar1;
+    grid-area: leftCont;
     border-radius: 5px;
     background-color: #444;
     padding-top: 2px;
     margin-right: 0;
   }
-  .container-big .box_sidebar1 .inside_sidebar_row1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 1px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 1%;
-  }
-  .container-big .box_sidebar1 .inside_sidebar_row1 .flags1 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar1 .inside_sidebar_row1 .flags2 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar1 .inside_sidebar_row2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .container-big .box_sidebar1 .inside_sidebar_row2 .flags1 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar1 .inside_sidebar_row2 .flags2 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: sidebar2;
-    border-radius: 5px;
-    background-color: #444;
-    padding-top: 2px;
-    margin-right: 0;
-  }
-  .container-big .box_sidebar2 .inside_sidebar_row1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 1px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 1%;
-  }
-  .container-big .box_sidebar2 .inside_sidebar_row1 .flags1 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar2 .inside_sidebar_row1 .flags2 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar2 .inside_sidebar_row2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .container-big .box_sidebar2 .inside_sidebar_row2 .flags1 {
-    margin: 0;
-    padding: 0;
-    margin-right: 1rem;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .box_sidebar2 .inside_sidebar_row2 .flags2 {
-    margin: 0;
-    padding: 0;
-    height: 1rem;
-    width: 1.5rem;
-  }
-  .container-big .foot {
+  .bigContainer .leftInsideContainer .foot {
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1225,7 +645,7 @@ tr {
     margin-bottom: 0px;
     padding-top: 70px;
   }
-  .lower_box_content {
+  .bigContainer .lower_box_content {
     min-width: 340px;
     max-height: 420px;
     background-color: #444;
@@ -1235,7 +655,7 @@ tr {
     font-size: 75%;
     display: block;
   }
-  .upper_box_content {
+  .bigContainer .upper_box_content {
     max-height: 360px;
     display: block;
     text-align: center;
@@ -1247,11 +667,11 @@ tr {
     border-radius: 5px;
     font-size: 75%;
   }
-  .upper_box_content h3 {
+  .bigContainer .upper_box_content h3 {
     padding-bottom: 1px;
     margin-bottom: 1px;
   }
-  .lower_outer_box_content {
+  .bigContainer .lower_outer_box_content {
     min-width: 340px;
     background-color: #444;
     color: #fff;
@@ -1265,14 +685,14 @@ tr {
         grid-template-rows: 1fr;
         grid-template-areas: "premier";
   }
-  .upper_outer_box_content {
+  .bigContainer .upper_outer_box_content {
     max-width: 340px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     font-size: 73%;
   }
-  .owl-carousel {
+  .bigContainer .owl-carousel {
     max-height: 300px;
     padding-left: 2px;
     padding-right: 2px;
@@ -1283,33 +703,33 @@ tr {
     font-size: large;
     text-align: center;
   }
-  .owl-carousel .owl-nav {
+  .bigContainer .owl-carousel .owl-nav {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
     max-height: 10px;
   }
-  .owl-carousel .owl-dots {
+  .bigContainer .owl-carousel .owl-dots {
     padding-top: 20px;
     min-height: 40px;
     text-align: center;
   }
-  .owl-carousel .top-top {
+  .bigContainer .owl-carousel .top-top {
     margin: 0;
     padding: 0;
   }
-  .owl-carousel .top-top table {
+  .bigContainer .owl-carousel .top-top table {
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
   }
-  .owl-carousel .top-top table caption {
+  .bigContainer .owl-carousel .top-top table caption {
     font-size: larger;
   }
-  .owl-carousel .top-top table tr td {
+  .bigContainer .owl-carousel .top-top table tr td {
     font-size: large;
   }
-  .container_ligas {
+  .bigContainer .container_ligas {
     padding: 7px;
     background-color: #1f1d1d;
     color: #fff;
@@ -1321,7 +741,7 @@ tr {
         grid-template-rows: 4% 45% 25% 14% 9% 3%;
         grid-template-areas: "sidebar1_ligas sidebar1_ligas" "left_liga left_liga" "middle_liga middle_liga" "right_goleadores_liga right_asistencias_liga" "sidebar2_ligas sidebar2_ligas" "pie2 pie2";
   }
-  .container_ligas .tabla_goleadores {
+  .bigContainer .container_ligas .tabla_goleadores {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: right_goleadores_liga;
@@ -1331,14 +751,14 @@ tr {
     max-width: 230px;
     padding-top: 5px;
   }
-  .container_ligas .tabla_goleadores h3 {
+  .bigContainer .container_ligas .tabla_goleadores h3 {
     margin-top: 10px;
   }
-  .container_ligas .tabla_goleadores td {
+  .bigContainer .container_ligas .tabla_goleadores td {
     font-size: 0.5em;
     padding-bottom: 1px;
   }
-  .container_ligas .tabla_asistencias {
+  .bigContainer .container_ligas .tabla_asistencias {
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: right_asistencias_liga;
@@ -1348,14 +768,14 @@ tr {
     max-width: 230px;
     padding-top: 5px;
   }
-  .container_ligas .tabla_asistencias .h3 {
+  .bigContainer .container_ligas .tabla_asistencias .h3 {
     margin-top: 10px;
   }
-  .container_ligas .tabla_asistencias td {
+  .bigContainer .container_ligas .tabla_asistencias td {
     font-size: 0.5em;
     padding-bottom: 1px;
   }
-  .container_ligas .box_middle_liga {
+  .bigContainer .container_ligas .box_middle_liga {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1372,33 +792,33 @@ tr {
     min-width: 100px;
     border-radius: 5px;
   }
-  .container_ligas .box_middle_liga h3 {
+  .bigContainer .container_ligas .box_middle_liga h3 {
     padding-bottom: 2px;
     text-align: center;
     color: #fff;
   }
-  .container_ligas .box_sidebar1_ligas {
+  .bigContainer .container_ligas .box_sidebar1_ligas {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: sidebar1_ligas;
     border-radius: 5px;
   }
-  .container_ligas .box_sidebar1_ligas h3 {
+  .bigContainer .container_ligas .box_sidebar1_ligas h3 {
     font-size: medium;
     text-align: center;
   }
-  .container_ligas .box_sidebar2_ligas {
+  .bigContainer .container_ligas .box_sidebar2_ligas {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: sidebar2_ligas;
     border-radius: 5px;
   }
-  .container_ligas .box_sidebar2_ligas .news {
+  .bigContainer .container_ligas .box_sidebar2_ligas .news {
     padding-top: 0px;
   }
-  .container_ligas .box_sidebar2_ligas .news iframe {
+  .bigContainer .container_ligas .box_sidebar2_ligas .news iframe {
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
@@ -1408,7 +828,7 @@ tr {
     height: 100px;
     width: 140px;
   }
-  .uruguaya, .argentina, .premier, .espana {
+  .bigContainer .uruguaya, .bigContainer .argentina, .bigContainer .premier, .bigContainer .espana {
     display: inline-block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1422,40 +842,40 @@ tr {
     border-radius: 7px;
     font-size: 18px;
   }
-  .premier_matches {
+  .bigContainer .premier_matches {
     display: block;
     border: solid;
     border-color: #fa7407;
     border-radius: 7px;
     min-width: 300px;
   }
-  .uruguay_matches {
+  .bigContainer .uruguay_matches {
     display: block;
     border: solid;
     border-color: #fa7407;
     border-radius: 7px;
     min-width: 300px;
   }
-  .argentina_matches {
+  .bigContainer .argentina_matches {
     display: block;
     border: solid;
     border-color: #fa7407;
     border-radius: 7px;
     min-width: 300px;
   }
-  .espana_matches {
+  .bigContainer .espana_matches {
     display: block;
     border: solid;
     border-color: #fa7407;
     border-radius: 7px;
     min-width: 300px;
   }
-  .lower_box_content {
+  .bigContainer .lower_box_content {
     margin-top: 10px;
     padding-top: 10px;
     max-height: 380px;
   }
-  .box_sidebar2 {
+  .bigContainer .box_sidebar2 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -1465,7 +885,7 @@ tr {
     padding-top: 20px;
     margin-right: 0;
   }
-  .box_sidebar2 .inside_sidebar_row1 {
+  .bigContainer .box_sidebar2 .inside_sidebar_row1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1473,26 +893,26 @@ tr {
     margin-left: 3.5%;
     margin-bottom: 2%;
   }
-  .box_sidebar2 .inside_sidebar_row1 .flags1 {
+  .bigContainer .box_sidebar2 .inside_sidebar_row1 .flags1 {
     height: 1.6rem;
     width: 2.4rem;
   }
-  .box_sidebar2 .inside_sidebar_row1 .flags2 {
+  .bigContainer .box_sidebar2 .inside_sidebar_row1 .flags2 {
     height: 1.6rem;
     width: 2.4rem;
   }
-  .box_sidebar2 .inside_sidebar_row2 {
+  .bigContainer .box_sidebar2 .inside_sidebar_row2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 2px;
     margin-left: 3.5%;
   }
-  .box_sidebar2 .inside_sidebar_row2 .flags1 {
+  .bigContainer .box_sidebar2 .inside_sidebar_row2 .flags1 {
     height: 1.6rem;
     width: 2.4rem;
   }
-  .box_sidebar2 .inside_sidebar_row2 .flags2 {
+  .bigContainer .box_sidebar2 .inside_sidebar_row2 .flags2 {
     height: 1.6rem;
     width: 2.4rem;
   }

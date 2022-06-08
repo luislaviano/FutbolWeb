@@ -32,9 +32,13 @@
   
   body{
     background-color: rgb(207, 173, 173);
-  
+    overflow: auto;
   }
 
+  .modal {
+    overflow-y:auto;
+  }
+  
   .outer-header{
     display: block;
     text-align: center;
@@ -67,117 +71,25 @@
     height: 100%;
   }
   
-  .box_sidebar1 {
-        grid-area: sidebar1;
+  .leftInsideContainer {
+        grid-area: leftCont;
+        border-radius: 5px;
+        background-color: #444;
+        padding-top: 5px;
+        margin-right: 0;
+        
+  }
+  
+  .rightInsideContainer {
+        grid-area: rightCont;
         border-radius: 5px;
         background-color: #444;
         padding-top: 5px;
         margin-right: 0;
 
-        .inside_sidebar_row1{
-
-            .flags1{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-            .flags2{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-
-        }
-
-        .inside_sidebar_row2{
-
-            .flags1{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-
-            .flags2{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-        }
   }
   
-  .box_sidebar2 {
-        grid-area: sidebar2;
-        border-radius: 5px;
-        background-color: #444;
-        padding-top: 5px;
-        margin-right: 0;
 
-        .inside_sidebar_row1{
-
-            .flags1{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-            .flags2{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-
-        }
-
-        .inside_sidebar_row2{
-
-            .flags1{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-
-            .flags2{
-                display: block;
-                margin-left: 33%;
-                margin-top: 11%;
-                margin-bottom: 11%;
-                height: 30px;
-                width: 48px;
-            }
-        }
-
-  }
-  
-  .box_sidebar1_ligas {
-        grid-area: sidebar1_ligas;
-        border-radius: 5px;
-  }
-  
-  .box_sidebar2_ligas {
-        grid-area: sidebar2_ligas;
-        border-radius: 5px;
-        padding-left: 5px;
-  }
   
   .news{
         text-align: center;
@@ -189,116 +101,16 @@
      }
   }
 
-  .upper_box_content {
-        grid-area: contenido1;
-  }
   
-  .lower_box_content {
-        grid-area: contenido2;
-  }
-  
-  .box_left_liga {
-        grid-area: left_liga;
-        display: flex;
-        justify-content: center;
-        gap: none;
-  }
-  
-  .box_right_goleadores_liga {
-        grid-area: right_goleadores_liga;
-        background-color: #444;
-        border-style: solid;
-        border-color: rgb(250, 116, 7);
-        border-radius: 5px;
 
-        h3{
-            text-align: center;
-        }
-  }
-  
-    
-  
-  .box_right_asistencias_liga {
-        grid-area: right_asistencias_liga;
-        background-color: #444;
-        border-style: solid;
-        border-color: rgb(250, 116, 7);
-        border-radius: 5px;
-        
-        h3{
-            text-align: center;
-        }
-  }
-  
-  
-  .box_left_liga{
-        border-style: solid;
-        border-color: rgb(250, 116, 7);
-        min-width: 347px;
-        border-radius: 5px;
-        background-color: #444;
-        color: #fff;
-  }
-  
-  
-  .box_middle_liga{
-        grid-area: middle_liga;
-        justify-content: center;
-        gap: none;
-        background-color: #444;
-        display: inline;
-        padding-right: 2px;
-        border-style: solid;
-        border-color: rgb(250, 116, 7);
-        min-width: 270px;
-        border-radius: 5px;
-
-        h3{
-            padding-bottom: 2px;
-            text-align: center;
-            color:#fff;
-        }
-  }
-  
-  
-  .tabla_goleadores{
-        @extend %flex;
-
-        margin: 1px;
-        td{
-            padding-right: 10px;
-            padding-bottom: 1px;
-        }
-  }
-  
-  .tabla_asistencias{
-        @extend %flex;
-
-        h3{
-            margin-top: 25px;
-        }
-
-        td{
-            padding-right: 10px;
-            padding-bottom: 1px;
-        }
-  }
   
   
   .foot {
   grid-area: pie;
   }
   
-  .foot_ligas {
-        grid-area: pie2;
-        padding-top: 3px;
-        border-style: solid;
-        border-radius: 5px;
-        background-color: rgb(153, 153, 153);
-        margin-top: 3px;
-  }
-  
-  .container-big {
+ 
+  .bigContainer {
         max-height: 1200px;
         margin: 1px;
         padding: 7px;
@@ -306,100 +118,16 @@
         color: #444;
         display: grid;
             grid-gap: 2px;
-            grid-template-columns: 1fr 8fr 1fr;
+            grid-template-columns: 55% 45%;
             grid-template-rows: 8fr 8fr 2fr;
             grid-template-areas:
-                "sidebar1 contenido1 sidebar2"
-                "sidebar1 contenido2 sidebar2"
-                "pie pie pie";
+                "leftCont rightCont"
+                "leftCont rightCont"
+                "pie pie";
   }
   
   
 
-  .container_ligas {
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 7px;
-        background-color: whitesmoke;
-        color: #fff;
-        display: grid;
-      
-            grid-template-columns: 1fr 4fr 3fr 3fr 2fr;
-            grid-template-rows: 6fr 6fr 1fr;
-            grid-template-areas:
-                "sidebar1_ligas left_liga middle_liga right_goleadores_liga sidebar2_ligas"
-                "sidebar1_ligas left_liga middle_liga right_asistencias_liga sidebar2_ligas"
-                "pie2 pie2 pie2 pie2 pie2";
-  }
-  
-  
-  .lower_box_content {
-        max-height: 500px;
-        background-color: #444;
-        padding: 0.1% 0 0 0;
-        color: #fff;
-        border-radius: 5px;
-        font-size: 60%;
-        display: block;
-        text-align: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
-            .owl-carousel {
-                padding-top: 10px;
-                background-color: #444;
-                color: #fff;
-                border-radius: 5px;
-                max-height: 480px;
-                .owl-item{
-                    max-height: 480px;
-                    text-align: center;
-                    }
-                }
-
-        h3{
-            padding-top: 0.4%;
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-  }
-  
-
-  .upper_box_content {
-        display: block;
-        text-align: center;
-        max-height: 1000px;
-        background-color: #444;
-        padding: 0 0 0 0;
-        color: #fff;
-        border-radius: 5px;
-        margin-top: 0px;
-  }
-  
-
-  
-  .lower_outer_box_content {
-        background-color: #444;
-        color: #fff;
-        border-radius: 5px;
-        font-size: 40%;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-                "uruguaya argentina premier espana"
-                "uruguaya argentina premier espana";
-  
-  }
-  
-  .uruguaya, .argentina, .premier, .espana{
-    height: 25%;
-    text-align: center;
-    min-width: 80px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    border-radius: 7px;
-    font-size: small;
-  }
   
   td{
   border: 1px solid #999;  
@@ -432,47 +160,6 @@
   
 
   
-  .game1, .game2, .game3, .game4, .game5, .game6, .game7{
-    padding: 0px;
-    font-size:small;
-    border-style: none;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 10% 35% 10% 10% 35%;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-            "lefty1 lefty2 centered righty1 righty2";
-    .lefty1{
-            grid-area: lefty1;
-            }
-    .lefty2{
-            grid-area: lefty2;
-            }
-    .righty1{
-            grid-area: righty1;
-            }
-    .righty2{
-            grid-area: righty2;
-            }
-    .centered{
-            grid-area: centered;
-            }
-  }
-  
-    .matches_liga{
-        display: flex;
-        justify-content: center;
-        padding-top: 2px;
-        background-color: #444;
-        td{
-            padding-right: 10px;
-            padding-bottom: 2px;
-            color:#fff;
-            text-align: center;
-            padding-top: 5px;
-        }
-    }
-  
   
  
 
@@ -483,108 +170,6 @@
 
 tr{
     margin-bottom: 50px;
-}
-
-
-
-.grupoA, .grupoB, .grupoC, .grupoD, .grupoE, .grupoF, .grupoG, .grupoH{
-    @include flex(inline, center, 5px);
-    justify-content: center;
-    gap: none;
-    background-color: #444;
-    display: block;
-    padding-right: 2px;
-    border-style: solid;
-    border-color: rgb(250, 116, 7);
-    min-width: 100px;
-    border-radius: 5px;
-
-    .top-top{
-        display: flex;
-        justify-content: center;
-        
-        table{
-            display: block;
-            font-size: small;    
-
-            caption{
-            
-                min-width: 50px;
-            }
-
-        }
-    }
-
-    .carousel-indicators{
-        position:sticky;
-        padding-top: 5px;
-        
-    }
-    .carousel-item{
-
-        .container{
-            display: block;
-            justify-content: space-between;
-            
-            table{
-                display:flex;
-                justify-content: center;
-
-                .Fecha1{
-                    display:block;
-                    margin-bottom: 0;
-                    td{
-                        display:flex;
-                        justify-content: center;
-                        border-style: none;
-                    }
-                }
-
-                .dia-Fecha1{
-                    display:block;
-                    margin-bottom: 0;
-                    td{
-                        display: flex;
-                        justify-content: center;
-                        border-style: none;
-                    }
-                }
-
-                .celda-izq, .celda-der{
-                    width: 2rem;
-                    height: 1.33rem;
-                }
-            
-                .celda-res-izq, .celda-res-der{
-                    text-align: center;
-                    min-width: 1.5rem;
-                    height: 1.33rem;
-                }
-        
-                tr{
-                
-                    td{
-                        font-size:medium;
-                        min-width: 2rem;
-                        text-align: center;
-                    }
-        
-                    img{
-                        width:2rem;
-                        height:1.33rem;
-                    }
-                }
-            }
-        }
-    
-        
-
-        h3{
-            padding-bottom: 1px;
-            text-align: center;
-            color:#fff;
-        }
-    }
 }
 
 
@@ -642,7 +227,7 @@ tr{
   
     
 
-    .container-big {
+    .bigContainer {
       min-height: 1150px;
       margin: 1px;
       padding: 4px;
@@ -650,8 +235,8 @@ tr{
       color: #444;
       display: grid;
           grid-gap: 2px;
-          grid-template-columns: 50% 50%;
-          grid-template-rows: 4% 40% 5% 39% 10%;
+          grid-template-columns: 70% 30%;
+          grid-template-rows: 50% 50%;
           grid-template-areas:
             "sidebar1 sidebar1"
             "contenido1 contenido1"
@@ -659,118 +244,14 @@ tr{
             "contenido2 contenido2"
             "pie pie";
 
-            .box_sidebar1 {
-                grid-area: sidebar1;
+            .leftInsideContainer {
+                grid-area: leftCont;
                 border-radius: 5px;
                 background-color: #444;
                 padding-top: 2px;
                 margin-right: 0;
                         
-                .inside_sidebar_row1{
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 1px;
-                    margin-left: 2%;
-                    margin-right: 2%;
-                    margin-bottom: 1%;
-        
-                    .flags1{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-        
-                    }
-        
-                    .flags2{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-        
-                    }
-                            
-                }
-        
-                .inside_sidebar_row2{
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 2%;
-                    margin-left: 2%;
-                    margin-right: 2%;
-        
-                    .flags1{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-                    }
-
-                    .flags2{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-                    }
-                }
-            }
-
-            .box_sidebar2 {
-                grid-area: sidebar2;
-                border-radius: 5px;
-                background-color: #444;
-                padding-top: 2px;
-                margin-right: 0;
-                        
-                .inside_sidebar_row1{
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 1px;
-                    margin-left: 2%;
-                    margin-right: 2%;
-                    margin-bottom: 1%;
-        
-                    .flags1{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-        
-                    }
-        
-                    .flags2{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-        
-                    }
-                            
-                }
-        
-                .inside_sidebar_row2{
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 2%;
-                    margin-left: 2%;
-                    margin-right: 2%;
-        
-                    .flags1{
-                        margin: 0;
-                        padding: 0;
-                        margin-right: 1rem;
-                        height: 1rem;
-                        width: 1.5rem;
-                    }
-                    
-                    .flags2{
-                        margin: 0;
-                        padding: 0;
-                        height: 1rem;
-                        width: 1.5rem;
-                    }
-                }
-            }
+                
 
         .foot{
             border-radius: 5px;
@@ -1084,3 +565,4 @@ tr{
     
   }
   
+}
